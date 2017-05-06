@@ -1,0 +1,110 @@
+\documentclass[BCOR0mm,fontsize=12pt,paper=a4,final,numbers=noenddot]{scrartcl}
+\usepackage[T1]{fontenc} % Für PDFLaTeX
+\usepackage[utf8]{inputenc} 
+\usepackage[hyphens]{url}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[style=german]{csquotes}
+\usepackage{setspace}
+\usepackage{tocloft}
+\usepackage[medium]{titlesec}
+\usepackage{color}
+\usepackage[inner=2.2cm,outer=2.2cm,top=2cm,bottom=2cm,includefoot,footskip=14mm]{geometry}
+\usepackage{scrpage2}
+\usepackage[final]{microtype}
+\usepackage{soul}
+\usepackage{blindtext}
+\usepackage{paralist}
+\usepackage{upgreek}
+\usepackage{lscape}
+\usepackage{enumitem} 
+\usepackage{longtable}
+\usepackage{tabu}
+\usepackage[]{listings}
+
+\usepackage{graphicx}
+\usepackage{tikz-er2}
+\usepackage{verbatim}
+
+
+
+% Einstellungen für Listings
+\definecolor{grey}{rgb}{0.4, 0.45, 0.41}
+\lstset{language=Java,
+                basicstyle=\ttfamily\footnotesize,
+                keywordstyle=\color{blue}\ttfamily,
+                stringstyle=\color{red}\ttfamily,
+                commentstyle=\color{grey}\ttfamily,
+                morecomment=[l][\color{grey}]{\#},
+                showstringspaces=false}
+
+\pagestyle{plain}
+
+% Auslassungszeichen
+
+\renewcommand{\dots}{[\ldots]}
+
+\begin{document}
+\makeatletter         
+
+% Kapitelüberschriften
+\renewcommand*{\thesubsection}{\@arabic\c@subsection.}
+\titleformat{\section}[hang]{\bfseries\LARGE\centering}{\thesection}{5pt}{}
+\titleformat{\subsection}[hang]{\bfseries\Large}{\thesubsection}{5pt}{}
+%\renewcommand*{\raggedsection}{\centering}
+
+
+\makeatother
+
+
+\setlength{\baselineskip}{11pt}
+
+\noindent{}\begin{footnotesize}Freie Universität Berlin\\
+Institut für Informatik\\
+Datenbanksysteme\\
+Sommersemester 2017\\
+Bearbeiter: Felix Binder, Nicolas Höcker, Armin Weber\\
+\end{footnotesize}
+
+\setlength{\baselineskip}{12pt}
+
+\bigskip
+
+\section*{Projektdokumentation}
+
+\onehalfspacing
+
+\subsection{Projektziel}
+
+Ziel des Projekts ist es, eine "`Projekt"=Web"=Anwendung"' zu erstellen, mit deren Hilfe der Datensatz "`american"=election"=tweets"' analysiert werden kann. Analysieren heißt hier, dass die Anwendung in der Lage sein soll, das Beziehungsgeflecht zwischen den in den Tweets verwendeten Hashtags grafisch darzustellen und mittels benutzerdefinierter Anfragen weitere Informationen aus den Daten zu gewinnen. So soll es unter anderem möglich sein, die am meisten verwendeten Hashtags zu identifizieren, Aussagen über deren paarweise gemeinsames Auftreten zu treffen und die Wichtigkeit einzelner Tweets zu bewerten. Auch Auswertungen dessen, wie sich die einzelnen Punkte über die Zeit hinweg verändert haben, sollen möglich sein.
+
+(Anmerkung für uns: Das Projekt hat also zwei Seiten: 1. Das ganze technisch umsetzen. 2. Nebenbei ein Maß für zunächst rein semantische Sachverhalte wie "`Wichtigkeit"' finden, so dass sich Daten aus dem Datensatz gewichten lassen.)
+
+\subsection{Team}
+
+\paragraph*{Felix Binder:}
+
+\paragraph*{Nicolas Höcker:}
+
+\paragraph*{Armin Weber:} Studiert Informatik im vierten Semester.
+
+
+\subsection{Explorative Datenanalyse}
+
+Der Datensatz besteht aus 6126 Tweets, die zwischen dem 5.~Januar 2016 und dem 28.~September 2016 über die Twitter"=Konten realDonaldTrump und HillaryClinton abgesetzt, d.\,\,h. von diesen selbst verfasst oder retweetet wurden. Das jeweilige Twitter"=Konto findet sich dabei in der ersten Spalte des Datensatzes ("`handle"'); die Information, ob es sich um einen Retweet handelt, in der dritten Spalte ("`is\_retweet"'), in der vierten bei Retweets der ursprüngliche Autor ("`original\_author"'). Der Text selbst -- und mit ihm alle Hashtags -- befindet sich in der zweiten Spalte.
+
+Darüber hinaus enthält der Datensatz Informationen darüber, ob der Text ein Zitat ist und also auf eine andere Quelle verweist (siebte Spalte, "`is\_quote\_status"', mit der Quelle in der neunten Spalte, "`source\_url"'), ob der jeweilige Tweet eine Antwort auf einen anderen Tweet darstellt (sechste Spalte, "`in\_reply\_to\_screen\_name"'), wie oft er retweetet wurde und wie oft favorisiert (Spalten 7 und 8).
+
+Dem ersten Augenschein nach sind für uns von Bedeutung:
+
+\begin{enumerate}[label=\alph*),nosep]
+ \item die Spalte Text, um daraus die Hashtags zu extrahieren;
+ \item die Spalte mit dem Datum und der Uhrzeit, um das unterschiedlich starke Vorkommen von Hashtags zu verschiedenen Zeitpunkten nachvollziehen zu können;
+ \item die Spalten zu Retweets und Favorisierungen, weil sie Indikatoren für die Wichtigkeit von Tweets sind.
+\end{enumerate}
+
+Die weiteren Spalten scheinen auf den ersten Blick für unsere Zwecke vernachlässigbar zu sein.
+
+
+\end{document}
