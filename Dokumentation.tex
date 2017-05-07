@@ -83,7 +83,7 @@ Ziel des Projekts ist es, eine "`Projekt"=Web"=Anwendung"' zu erstellen, mit der
 
 \subsection{Team}
 
-\paragraph*{Felix Binder:}
+\paragraph*{Felix Binder:} Studiert Philosophie und Informatik (60 LP) gegen Ende seines Bachelorstudiums.
 
 \paragraph*{Nicolas Höcker:}
 
@@ -138,7 +138,7 @@ Noch offen: Welche Attribute brauchen wir bei Tweets wirklich? Außerdem interes
  \node[relationship] (ent) [below right=3cm of tweet] {enthält} edge node[auto,swap]{N} (tweet);
     \node[attribute] (w_oft) [below=of ent] {wie oft} edge (ent);
     
- \node[entity] (hash_p) [below=5cm of hash,algin=center] {Hashtag-\\Paare} edge node[auto,swap]{M} (ent);
+ \node[entity] (hash_p) [below=5cm of hash,align=center] {Hashtag-\\Paare} edge node[auto,swap]{M} (ent);
     \node[attribute] (anzahl) [below=0.5cm of hash_p] {Anzahl (global)} edge (hash_p);
     
  \draw[link] [total] (bilden)  -/ node[right,swap]{M} (hash_p);
