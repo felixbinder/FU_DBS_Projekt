@@ -50,8 +50,8 @@
 
 % Kapitelüberschriften
 \renewcommand*{\thesubsection}{\@arabic\c@subsection.}
-\titleformat{\section}[hang]{\bfseries\LARGE\centering}{\thesection}{5pt}{}
-\titleformat{\subsection}[hang]{\bfseries\Large}{\thesubsection}{5pt}{}
+\titleformat{\section}[hang]{\sffamily\bfseries\LARGE\centering}{\thesection}{5pt}{}
+\titleformat{\subsection}[hang]{\sffamily\bfseries\Large}{\thesubsection}{5pt}{}
 %\renewcommand*{\raggedsection}{\centering}
 
 
@@ -94,7 +94,7 @@ Ziel des Projekts ist es, eine "`Projekt"=Web"=Anwendung"' zu erstellen, mit der
 
 Der Datensatz besteht aus 6126 Tweets, die zwischen dem 5.~Januar 2016 und dem 28.~September 2016 über die Twitter"=Konten realDonaldTrump und HillaryClinton abgesetzt, d.\,\,h. von diesen selbst verfasst oder retweetet wurden. Das jeweilige Twitter"=Konto findet sich dabei in der ersten Spalte des Datensatzes ("`handle"'); die Information, ob es sich um einen Retweet handelt, in der dritten Spalte ("`is\_retweet"'), in der vierten bei Retweets der ursprüngliche Autor ("`original\_author"'). Der Text selbst -- und mit ihm alle Hashtags -- befindet sich in der zweiten Spalte.
 
-Darüber hinaus enthält der Datensatz Informationen darüber, ob der Text ein Zitat ist und also auf eine andere Quelle verweist (siebte Spalte, "`is\_quote\_status"', mit der Quelle in der neunten Spalte, "`source\_url"'), ob der jeweilige Tweet eine Antwort auf einen anderen Tweet darstellt (sechste Spalte, "`in\_reply\_to\_screen\_name"'), wie oft er retweetet wurde und wie oft favorisiert (Spalten 7 und 8).
+Darüber hinaus enthält der Datensatz Informationen darüber, ob der Text ein Zitat ist und also auf eine andere Quelle verweist (siebte Spalte, "`is\_quote\_status"', mit der Quelle in der neunten Spalte, "`source\_url"') sowie dabei evtl. abgekürzt wurde (zehnte Spalte, "`truncated"'), ob der jeweilige Tweet eine Antwort auf einen anderen Tweet darstellt (sechste Spalte, "`in\_reply\_to\_screen\_name"'), wie oft er retweetet wurde und wie oft favorisiert (Spalten 7 und 8).
 
 Dem ersten Augenschein nach sind für uns von Bedeutung:
 
@@ -105,6 +105,47 @@ Dem ersten Augenschein nach sind für uns von Bedeutung:
 \end{enumerate}
 
 Die weiteren Spalten scheinen auf den ersten Blick für unsere Zwecke vernachlässigbar zu sein.
+
+
+\subsection{ER"=Modellierung}
+
+Noch offen: Welche Attribute brauchen wir bei Tweets wirklich? Außerdem interessant zu wissen wäre: Sind die Daten für Retweets usf. dort bei Retweets auf den Tweet von Clinton oder Trump bezogen -- oder auf den Ausgangstweet, der von einem anderen Autor stammt?
+
+\usetikzlibrary{positioning}
+\usetikzlibrary{shadows}
+\enlargethispage{0.2cm}
+
+\begin{footnotesize}
+
+\begin{tikzpicture}[node distance=4em]
+ \node[entity] (tweet) {Tweet};
+    \node[attribute] (hanlde) [above=of tweet] {handle} edge (tweet);
+    \node[attribute] (text) [above left=of tweet] {text} edge (tweet);
+    \node[attribute] (time) [left=of tweet] {time} edge (tweet);
+    \node[attribute] (retweet_count) [below left=1cm of tweet] {retweet\_count} edge (tweet);
+    \node[attribute] (favorite_count) [below=of tweet] {favorite\_count} edge (tweet);
+    \node[derived attribute] (imp) [above right=of tweet] {Wichtigkeit} edge (tweet);
+    
+    
+ \node[relationship] (enth) [right=2cm of tweet] {enthält} edge node[auto,swap]{N} (tweet);
+    \node[attribute] (oft) [above right=of enth] {wie oft} edge (enth);
+ \node[entity] (hash) [right=2cm of enth] {Hashtag} edge [total] node[auto,swap]{M} (enth);
+    \node[attribute] (name) [above=of hash] {\key{Name}} edge (hash);
+    \node[attribute] (anz) [above right=0.7cm of hash, align=center] {Anzahl\\(global)} edge (hash);
+ 
+ \node[relationship] (bilden) [below=1.4cm of hash] {bilden} edge node[auto,swap]{2} (hash);
+ 
+ \node[relationship] (ent) [below right=3cm of tweet] {enthält} edge node[auto,swap]{N} (tweet);
+    \node[attribute] (w_oft) [below=of ent] {wie oft} edge (ent);
+    
+ \node[entity] (hash_p) [below=5cm of hash,algin=center] {Hashtag-\\Paare} edge node[auto,swap]{M} (ent);
+    \node[attribute] (anzahl) [below=0.5cm of hash_p] {Anzahl (global)} edge (hash_p);
+    
+ \draw[link] [total] (bilden)  -/ node[right,swap]{M} (hash_p);
+    
+\end{tikzpicture}
+
+\end{footnotesize}
 
 
 \end{document}
