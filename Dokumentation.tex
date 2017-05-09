@@ -119,13 +119,21 @@ Noch offen: Welche Attribute brauchen wir bei Tweets wirklich? Außerdem interes
 
 \begin{tikzpicture}[node distance=4em]
  \node[entity] (tweet) {Tweet};
-    \node[attribute] (hanlde) [above=of tweet] {handle} edge (tweet);
+    %\node[attribute] (hanlde) [above=of tweet] {handle} edge (tweet);
     \node[attribute] (text) [above left=of tweet] {text} edge (tweet);
     \node[attribute] (time) [left=of tweet] {time} edge (tweet);
     \node[attribute] (retweet_count) [below left=1cm of tweet] {retweet\_count} edge (tweet);
     \node[attribute] (favorite_count) [below=of tweet] {favorite\_count} edge (tweet);
     \node[derived attribute] (imp) [above right=of tweet] {Wichtigkeit} edge (tweet);
+ 
+ \node[relationship] (schreibt) [above=2cm of tweet] {schreibt} edge [total] node[auto,swap]{N} (tweet);
+ 
+ \node[entity] (autor) [above=2cm of schreibt] {Autor} edge node[auto,swap]{1} (schreibt);
+    \node[attribute] (hanlde) [left=of autor] {\key{handle}} edge (autor);
     
+ \node[relationship] (retweetet) [right=0.4cm of schreibt] {retweetet} edge node[auto,swap]{1} (autor);
+    \node[attribute] (orig) [above right=of retweetet] {original\_author} edge (retweetet);
+    \draw[link]  (tweet)  -/ node[left,swap]{M} (retweetet);
     
  \node[relationship] (enth) [right=2cm of tweet] {enthält} edge node[auto,swap]{N} (tweet);
     \node[attribute] (oft) [above right=of enth] {wie oft} edge (enth);
@@ -139,7 +147,7 @@ Noch offen: Welche Attribute brauchen wir bei Tweets wirklich? Außerdem interes
     \node[attribute] (w_oft) [below=of ent] {wie oft} edge (ent);
     
  \node[entity] (hash_p) [below=5cm of hash,align=center] {Hashtag-\\Paare} edge node[auto,swap]{M} (ent);
-    \node[attribute] (anzahl) [below=0.5cm of hash_p] {Anzahl (global)} edge (hash_p);
+    \node[attribute] (anzahl) [below= of hash_p] {Anzahl (global)} edge (hash_p);
     
  \draw[link] [total] (bilden)  -/ node[right,swap]{M} (hash_p);
     
