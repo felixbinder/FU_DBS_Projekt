@@ -1,0 +1,1 @@
+/Applications/Postgres.app/Contents/Versions/9.6/bin/postgres "-D" "/Users/felixbinder/Cloud/Uni/Informatik/Datenbanksysteme/Projekt/FU_DBS_Projekt/data_dir" "-p" "5432"
