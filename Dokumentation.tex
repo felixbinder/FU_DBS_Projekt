@@ -22,11 +22,10 @@
 \usepackage{longtable}
 \usepackage{tabu}
 \usepackage[]{listings}
-
 \usepackage{graphicx}
 \usepackage{tikz-er2}
 \usepackage{verbatim}
-
+\usepackage{ulem}
 
 
 % Einstellungen für Listings
@@ -170,5 +169,25 @@ Das ER"=Modell für das Projekt sieht wie folgt aus:
 
 Davon abgesehen war unser Anliegen, immer die naheliegenden Entscheidungen zu treffen: etwa Hashtag"=Paare aus Hashtags zusammenzusetzen und in den Relationen alle Informationen zu speichern, die später abrufbar sein sollen, etwa wie oft Hashtags in einzelnen Tweets vorkommen. Dort, wo es sinnvoll erschien, haben wir als Schlüssel außerdem eigenständige IDs ergänzt, um keine zu komplexen Schlüssel verwenden zu müssen (wie es bei den Tweets sonst etwa der Fall wäre).
 
+
+\subsection{Relationales Modell}
+
+\textsc{Autor}(\uline{handle})
+
+\noindent\textsc{Tweet}(\uline{ID}, text, time, is\_retweet, is\_quote\_status, retweet\_count, favorite\_count)
+
+\noindent\textsc{A\_schreibt\_T}(\uline{ID}, handle, T\_ID)
+
+\noindent\textsc{A\_retweetet\_T}(\uline{ID}, \dashuline{handle}, original\_author, \dashuline{T\_ID})
+
+\noindent\textsc{Hashtag}(\uline{Name}, Anzahl)
+
+\noindent\textsc{T\_enth\_H}(\uline{ID}, \dashuline{T\_ID}, \dashuline{H\_Name}, wie\_oft)
+
+\noindent\textsc{Hashtag\_Paare}(\uline{ID}, Name1, Name2, Anzahl)
+
+\noindent\textsc{H\_bilden\_HP}(\uline{ID}, \dashuline{H\_Name}, \dashuline{HP\_ID})
+
+\noindent\textsc{T\_enth\_HP}(\uline{ID}, \dashuline{T\_ID}, \dashuline{HP\_ID}, wie\_oft)
 
 \end{document}
