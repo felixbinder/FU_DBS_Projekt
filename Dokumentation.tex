@@ -125,6 +125,7 @@ Noch offen: Welche Attribute brauchen wir bei Tweets wirklich? Außerdem interes
     \node[attribute] (retweet_count) [below left=1cm of tweet] {retweet\_count} edge (tweet);
     \node[attribute] (favorite_count) [below=of tweet] {favorite\_count} edge (tweet);
     \node[derived attribute] (imp) [above right=of tweet] {Wichtigkeit} edge (tweet);
+    \node[attribute] (id) [below right=1cm of tweet.20] {\key{ID}} edge (tweet);
  
  \node[relationship] (schreibt) [above=2cm of tweet] {schreibt} edge [total] node[auto,swap]{N} (tweet);
  
@@ -146,8 +147,9 @@ Noch offen: Welche Attribute brauchen wir bei Tweets wirklich? Außerdem interes
  \node[relationship] (ent) [below right=3cm of tweet] {enthält} edge node[auto,swap]{N} (tweet);
     \node[attribute] (w_oft) [below=of ent] {wie oft} edge (ent);
     
- \node[entity] (hash_p) [below=5cm of hash,align=center] {Hashtag-\\Paare} edge node[auto,swap]{M} (ent);
+ \node[entity] (hash_p) [below=5cm of hash,align=center] {Hashtag-\\Paare} edge [total] node[auto,swap]{M} (ent);
     \node[attribute] (anzahl) [below= of hash_p] {Anzahl (global)} edge (hash_p);
+    \node[attribute] (hp_id) [below right= of hash_p] {\key{ID}} edge (hash_p);
     
  \draw[link] [total] (bilden)  -/ node[right,swap]{M} (hash_p);
     
