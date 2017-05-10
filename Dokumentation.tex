@@ -78,7 +78,7 @@ Bearbeiter: Felix Binder, Nicolas Höcker, Armin Weber\\
 
 Ziel des Projekts ist es, eine "`Projekt"=Web"=Anwendung"' zu erstellen, mit deren Hilfe der Datensatz "`american"=election"=tweets"' analysiert werden kann. Analysieren heißt hier, dass die Anwendung in der Lage sein soll, das Beziehungsgeflecht zwischen den in den Tweets verwendeten Hashtags grafisch darzustellen und mittels benutzerdefinierter Anfragen weitere Informationen aus den Daten zu gewinnen. So soll es unter anderem möglich sein, die am meisten verwendeten Hashtags zu identifizieren, Aussagen über deren paarweise gemeinsames Auftreten zu treffen und die Wichtigkeit einzelner Tweets zu bewerten. Auch Auswertungen dessen, wie sich die einzelnen Punkte über die Zeit hinweg verändert haben, sollen möglich sein.
 
-(Anmerkung für uns: Das Projekt hat also zwei Seiten: 1. Das ganze technisch umsetzen. 2. Nebenbei ein Maß für zunächst rein semantische Sachverhalte wie "`Wichtigkeit"' finden, so dass sich Daten aus dem Datensatz gewichten lassen.)
+% (Anmerkung für uns: Das Projekt hat also zwei Seiten: 1. Das ganze technisch umsetzen. 2. Nebenbei ein Maß für zunächst rein semantische Sachverhalte wie "`Wichtigkeit"' finden, so dass sich Daten aus dem Datensatz gewichten lassen.)
 
 \subsection{Team}
 
@@ -121,43 +121,39 @@ Das ER"=Modell für das Projekt sieht wie folgt aus:
 
 \begin{tikzpicture}[node distance=4em]
  \node[entity] (tweet) {Tweet};
-    %\node[attribute] (hanlde) [above=of tweet] {handle} edge (tweet);
-    
-    
+    \node[attribute] (handle) [above=9em of tweet] {handle} edge (tweet);
     \node[attribute] (id) [below left=2cm of tweet] {\key{ID}} edge (tweet);
     \node[attribute] (text) [above= 6em of id] {text} edge (tweet);
     \node[attribute] (time) [above=2em of id] {time} edge (tweet);
     \node[attribute] (is_q) [above= 10em of id,align=center] {is\_quote\_\\status} edge (tweet);
     \node[attribute] (favorite_count) [above=16em of id] {favorite\_count} edge (tweet.120);
-    \node[derived attribute] (imp) [above right=of tweet] {Wichtigkeit} edge (tweet);
+    \node[derived attribute] (imp) [right=of handle] {Wichtigkeit} edge (tweet);
     \node[attribute] (retweet_count) [below=2em of id] {retweet\_count} edge (tweet);
     \node[attribute] (is_r) [below=8em of tweet] {is\_retweet} edge (tweet);
  
- \node[relationship] (schreibt) [above=2cm of tweet] {schreibt} edge [total] node[auto,swap]{N} (tweet);
- 
- \node[entity] (autor) [above=2cm of schreibt] {Autor} edge node[auto,swap]{1} (schreibt);
-    \node[attribute] (hanlde) [left=of autor] {\key{handle}} edge (autor);
-    
- \node[relationship] (retweetet) [right=0.4cm of schreibt] {retweetet} edge node[auto,swap]{1} (autor);
-    \node[attribute] (orig) [above right=of retweetet] {original\_author} edge (retweetet);
-    \draw[link]  (tweet)  -/ node[left,swap]{N} (retweetet);
-    
+%  \node[relationship] (schreibt) [above=2cm of tweet] {schreibt} edge [total] node[auto,swap]{N} (tweet);
+%  
+%  \node[entity] (autor) [above=2cm of schreibt] {Autor} edge node[auto,swap]{1} (schreibt);
+%     \node[attribute] (hanlde) [left=of autor] {\key{handle}} edge (autor);
+%     
+%  \node[relationship] (retweetet) [right=0.4cm of schreibt] {retweetet} edge node[auto,swap]{1} (autor);
+%     \node[attribute] (orig) [above right=of retweetet] {original\_author} edge (retweetet);
+%     \draw[link]  (tweet)  -/ node[left,swap]{N} (retweetet);
+%     
  \node[relationship] (enth) [right=2cm of tweet] {enthält} edge node[auto,swap]{N} (tweet);
-    \node[attribute] (oft) [above right=of enth] {wie oft} edge (enth);
+    \node[attribute] (oft) [above right=of enth] {wie\_oft} edge (enth);
  \node[entity] (hash) [right=2cm of enth] {Hashtag} edge [total] node[auto,swap]{M} (enth);
     \node[attribute] (name) [above=of hash] {\key{Name}} edge (hash);
-    \node[attribute] (anz) [above right=0.7cm of hash, align=center] {Anzahl\\(global)} edge (hash);
+    \node[attribute] (anz) [above right=0.7cm of hash, align=center] {Anzahl\_\\global} edge (hash);
  
  \node[relationship] (bilden) [below=1.4cm of hash] {bilden} edge node[auto,swap]{2} (hash);
  
  \node[relationship] (ent) [below right=3cm of tweet] {enthält} edge node[auto,swap]{N} (tweet);
-    \node[attribute] (w_oft) [below=of ent] {wie oft} edge (ent);
+    \node[attribute] (w_oft) [below=of ent] {wie\_oft} edge (ent);
     
  \node[entity] (hash_p) [below=5cm of hash,align=center] {Hashtag-\\Paare} edge [total] node[auto,swap]{M} (ent);
-    \node[attribute] (anzahl) [below= of hash_p] {Anzahl (global)} edge (hash_p);
+    \node[attribute] (anzahl) [below= of hash_p] {Anzahl\_global} edge (hash_p);
     \node[attribute] (hp_id) [below right=1cm of hash_p] {\key{ID}} edge (hash_p);
-    \node[attribute] (name2) [above=2em of hp_id] {Name2} edge (hash_p);
-    \node[attribute] (name1) [above=2em of name2] {Name1} edge (hash_p);
     
  \draw[link] [total] (bilden)  -/ node[right,swap]{M} (hash_p);
     
@@ -169,25 +165,21 @@ Das ER"=Modell für das Projekt sieht wie folgt aus:
 
 Davon abgesehen war unser Anliegen, immer die naheliegenden Entscheidungen zu treffen: etwa Hashtag"=Paare aus Hashtags zusammenzusetzen und in den Relationen alle Informationen zu speichern, die später abrufbar sein sollen, etwa wie oft Hashtags in einzelnen Tweets vorkommen. Dort, wo es sinnvoll erschien, haben wir als Schlüssel außerdem eigenständige IDs ergänzt, um keine zu komplexen Schlüssel verwenden zu müssen (wie es bei den Tweets sonst etwa der Fall wäre).
 
+Außerdem haben wir uns nach einigem Hin und Her dazu entschlossen, den Autor eines Tweets als Attribut handle in das Modell zu integrieren statt als eigene Entität. Hätten wir ihn als eigene Entität modelliert, die zu Tweets in den Relationen "`schreibt"' und "`retweetet"' steht, so hätten wir eine Tabelle mit nur einem einzigen Attribut (eben "`handle"'), wohingegen alle Attribute der Relationen zu "`Tweet"' gezogen hätten werden können, da es sich um 1:N"=Relationen gehandelt hätte. Damit hätte man für Abfragen nach dem Autor eines Tweets eigens mehrere Tabellen mittels JOIN verbinden müssen, was gerade bei Abfragen von den Hashtags her reichlich komplex geworden wäre, ohne dass das Ausgliedern des Autors als Entität irgendeinen Vorteil zu versprechen schien.
+
 
 \subsection{Relationales Modell}
 
-\textsc{Autor}(\uline{handle})
+\noindent\textsc{Tweet}(\uline{ID}, handle, text, time, is\_retweet, is\_quote\_status, retweet\_count, favorite\_count)
 
-\noindent\textsc{Tweet}(\uline{ID}, text, time, is\_retweet, is\_quote\_status, retweet\_count, favorite\_count)
+\noindent\textsc{Hashtag}(\uline{Name}, Anzahl\_global)
 
-\noindent\textsc{A\_schreibt\_T}(\uline{ID}, handle, T\_ID)
+\noindent\textsc{T\_enth\_H}(\uline{\dashuline{T\_ID}, \dashuline{H\_Name}}, wie\_oft)
 
-\noindent\textsc{A\_retweetet\_T}(\uline{ID}, \dashuline{handle}, original\_author, \dashuline{T\_ID})
+\noindent\textsc{Hashtag\_Paare}(\uline{ID}, Anzahl\_global)
 
-\noindent\textsc{Hashtag}(\uline{Name}, Anzahl)
+\noindent\textsc{H\_bilden\_HP}(\uline{\dashuline{H\_Name}, \dashuline{HP\_ID}})
 
-\noindent\textsc{T\_enth\_H}(\uline{ID}, \dashuline{T\_ID}, \dashuline{H\_Name}, wie\_oft)
-
-\noindent\textsc{Hashtag\_Paare}(\uline{ID}, Name1, Name2, Anzahl)
-
-\noindent\textsc{H\_bilden\_HP}(\uline{ID}, \dashuline{H\_Name}, \dashuline{HP\_ID})
-
-\noindent\textsc{T\_enth\_HP}(\uline{ID}, \dashuline{T\_ID}, \dashuline{HP\_ID}, wie\_oft)
+\noindent\textsc{T\_enth\_HP}(\uline{\dashuline{T\_ID}, \dashuline{HP\_ID}}, wie\_oft)
 
 \end{document}
