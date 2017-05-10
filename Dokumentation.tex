@@ -91,7 +91,7 @@ Ziel des Projekts ist es, eine "`Projekt"=Web"=Anwendung"' zu erstellen, mit der
 
 \subsection{Explorative Datenanalyse}
 
-Der Datensatz besteht aus 6126 Tweets, die zwischen dem 5.~Januar 2016 und dem 28.~September 2016 über die Twitter"=Konten realDonaldTrump und HillaryClinton abgesetzt, d.\,\,h. von diesen selbst verfasst oder retweetet wurden. Das jeweilige Twitter"=Konto findet sich dabei in der ersten Spalte des Datensatzes ("`handle"'); die Information, ob es sich um einen Retweet handelt, in der dritten Spalte ("`is\_retweet"'), in der vierten bei Retweets der ursprüngliche Autor ("`original\_author"'). Der Text selbst -- und mit ihm alle Hashtags -- befindet sich in der zweiten Spalte.
+Der Datensatz besteht aus 6126 Tweets, die zwischen dem 5.~Januar 2016 und dem 28.~September 2016 über die Twitter"=Konten \textit{realDonaldTrump} und \textit{HillaryClinton} abgesetzt, d.\,\,h. von diesen selbst verfasst oder retweetet wurden. Das jeweilige Twitter"=Konto findet sich dabei in der ersten Spalte des Datensatzes ("`handle"'); die Information, ob es sich um einen Retweet handelt, in der dritten Spalte ("`is\_retweet"'), in der vierten bei Retweets der ursprüngliche Autor ("`original\_author"'). Der Text selbst -- und mit ihm alle Hashtags -- befindet sich in der zweiten Spalte.
 
 Darüber hinaus enthält der Datensatz Informationen darüber, ob der Text ein Zitat ist und also auf eine andere Quelle verweist (siebte Spalte, "`is\_quote\_status"', mit der Quelle in der neunten Spalte, "`source\_url"') sowie dabei evtl. abgekürzt wurde (zehnte Spalte, "`truncated"'), ob der jeweilige Tweet eine Antwort auf einen anderen Tweet darstellt (sechste Spalte, "`in\_reply\_to\_screen\_name"'), wie oft er retweetet wurde und wie oft favorisiert (Spalten 7 und 8).
 
@@ -174,12 +174,17 @@ Außerdem haben wir uns nach einigem Hin und Her dazu entschlossen, den Autor ei
 
 \noindent\textsc{Hashtag}(\uline{Name}, Anzahl\_global)
 
-\noindent\textsc{T\_enth\_H}(\uline{\dashuline{T\_ID}, \dashuline{H\_Name}}, wie\_oft)
+\noindent\textsc{T\_enth\_H}(\uline{\dashuline{Tweet\_ID}, \dashuline{H\_Name}}, wie\_oft)
 
 \noindent\textsc{Hashtag\_Paare}(\uline{ID}, Anzahl\_global)
 
-\noindent\textsc{H\_bilden\_HP}(\uline{\dashuline{H\_Name}, \dashuline{HP\_ID}})
+\noindent\textsc{Hashtags\_bilden\_HP}(\uline{\dashuline{Hash\_Name}, \dashuline{HP\_ID}})
 
-\noindent\textsc{T\_enth\_HP}(\uline{\dashuline{T\_ID}, \dashuline{HP\_ID}}, wie\_oft)
+\noindent\textsc{T\_enth\_HP}(\uline{\dashuline{Tweet\_ID}, \dashuline{Hashpaar\_ID}}, wie\_oft)
+
+\subsection{Datenbank}
+Wir haben eine Datenbank \textit{Election} erstellt.
+
+\includegraphics[width=0.95\textwidth]{datenbank_beweis.png}
 
 \end{document}
