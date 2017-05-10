@@ -1,5 +1,5 @@
 \documentclass[BCOR0mm,fontsize=12pt,paper=a4,final,numbers=noenddot]{scrartcl}
-\usepackage[T1]{fontenc} % Für PDFLaTeX
+%\usepackage[T1]{fontenc} % Für PDFLaTeX
 \usepackage[utf8]{inputenc} 
 \usepackage[hyphens]{url}
 \usepackage[ngerman]{babel}
@@ -22,11 +22,10 @@
 \usepackage{longtable}
 \usepackage{tabu}
 \usepackage[]{listings}
-
 \usepackage{graphicx}
 \usepackage{tikz-er2}
 \usepackage{verbatim}
-
+\usepackage{ulem}
 
 
 % Einstellungen für Listings
@@ -107,27 +106,32 @@ Dem ersten Augenschein nach sind für uns von Bedeutung:
 Die weiteren Spalten scheinen auf den ersten Blick für unsere Zwecke vernachlässigbar zu sein.
 
 
+\clearpage
+
 \subsection{ER"=Modellierung}
 
-Noch offen: Welche Attribute brauchen wir bei Tweets wirklich? Außerdem interessant zu wissen wäre: Sind die Daten für Retweets usf. dort bei Retweets auf den Tweet von Clinton oder Trump bezogen -- oder auf den Ausgangstweet, der von einem anderen Autor stammt?
+Das ER"=Modell für das Projekt sieht wie folgt aus:
 
-Eine eindeutige Tweet"=ID eingefügt.
+\bigskip
 
 \usetikzlibrary{positioning}
 \usetikzlibrary{shadows}
-\enlargethispage{0.2cm}
 
 \begin{footnotesize}
 
 \begin{tikzpicture}[node distance=4em]
  \node[entity] (tweet) {Tweet};
     %\node[attribute] (hanlde) [above=of tweet] {handle} edge (tweet);
-    \node[attribute] (text) [above left=of tweet] {text} edge (tweet);
-    \node[attribute] (time) [left=of tweet] {time} edge (tweet);
-    \node[attribute] (retweet_count) [below left=1cm of tweet] {retweet\_count} edge (tweet);
-    \node[attribute] (favorite_count) [below=of tweet] {favorite\_count} edge (tweet);
+    
+    
+    \node[attribute] (id) [below left=2cm of tweet] {\key{ID}} edge (tweet);
+    \node[attribute] (text) [above= 6em of id] {text} edge (tweet);
+    \node[attribute] (time) [above=2em of id] {time} edge (tweet);
+    \node[attribute] (is_q) [above= 10em of id,align=center] {is\_quote\_\\status} edge (tweet);
+    \node[attribute] (favorite_count) [above=16em of id] {favorite\_count} edge (tweet.120);
     \node[derived attribute] (imp) [above right=of tweet] {Wichtigkeit} edge (tweet);
-    \node[attribute] (id) [below right=1cm of tweet.20] {\key{ID}} edge (tweet);
+    \node[attribute] (retweet_count) [below=2em of id] {retweet\_count} edge (tweet);
+    \node[attribute] (is_r) [below=8em of tweet] {is\_retweet} edge (tweet);
  
  \node[relationship] (schreibt) [above=2cm of tweet] {schreibt} edge [total] node[auto,swap]{N} (tweet);
  
@@ -136,7 +140,7 @@ Eine eindeutige Tweet"=ID eingefügt.
     
  \node[relationship] (retweetet) [right=0.4cm of schreibt] {retweetet} edge node[auto,swap]{1} (autor);
     \node[attribute] (orig) [above right=of retweetet] {original\_author} edge (retweetet);
-    \draw[link]  (tweet)  -/ node[left,swap]{M} (retweetet);
+    \draw[link]  (tweet)  -/ node[left,swap]{N} (retweetet);
     
  \node[relationship] (enth) [right=2cm of tweet] {enthält} edge node[auto,swap]{N} (tweet);
     \node[attribute] (oft) [above right=of enth] {wie oft} edge (enth);
@@ -151,7 +155,9 @@ Eine eindeutige Tweet"=ID eingefügt.
     
  \node[entity] (hash_p) [below=5cm of hash,align=center] {Hashtag-\\Paare} edge [total] node[auto,swap]{M} (ent);
     \node[attribute] (anzahl) [below= of hash_p] {Anzahl (global)} edge (hash_p);
-    \node[attribute] (hp_id) [below right= of hash_p] {\key{ID}} edge (hash_p);
+    \node[attribute] (hp_id) [below right=1cm of hash_p] {\key{ID}} edge (hash_p);
+    \node[attribute] (name2) [above=2em of hp_id] {Name2} edge (hash_p);
+    \node[attribute] (name1) [above=2em of name2] {Name1} edge (hash_p);
     
  \draw[link] [total] (bilden)  -/ node[right,swap]{M} (hash_p);
     
@@ -159,5 +165,29 @@ Eine eindeutige Tweet"=ID eingefügt.
 
 \end{footnotesize}
 
+\noindent{}Dieses Modell enthält augenblicklich noch mehr Informationen, als für die Beantwortung der in Abschnitt 1 genannten Fragen nötig wäre. So wäre es eigentlich unnötig abzuspeichern, ob ein Tweet ein Retweet oder ein Zitat ist. Allerdings wollen wir die Option offenhalten, in der fertigen Anwendung zu untersuchen, ob es signifikante Unterschiede hinsichtlich der Wichtigkeit der Tweets der verschiedenen Arten gibt. Da wir solche Unterschiede nicht ausschließen können, scheint uns das Weglassen solcher Informationen zu diesem frühen Zeitpunkt nicht angeraten.
+
+Davon abgesehen war unser Anliegen, immer die naheliegenden Entscheidungen zu treffen: etwa Hashtag"=Paare aus Hashtags zusammenzusetzen und in den Relationen alle Informationen zu speichern, die später abrufbar sein sollen, etwa wie oft Hashtags in einzelnen Tweets vorkommen. Dort, wo es sinnvoll erschien, haben wir als Schlüssel außerdem eigenständige IDs ergänzt, um keine zu komplexen Schlüssel verwenden zu müssen (wie es bei den Tweets sonst etwa der Fall wäre).
+
+
+\subsection{Relationales Modell}
+
+\textsc{Autor}(\uline{handle})
+
+\noindent\textsc{Tweet}(\uline{ID}, text, time, is\_retweet, is\_quote\_status, retweet\_count, favorite\_count)
+
+\noindent\textsc{A\_schreibt\_T}(\uline{ID}, handle, T\_ID)
+
+\noindent\textsc{A\_retweetet\_T}(\uline{ID}, \dashuline{handle}, original\_author, \dashuline{T\_ID})
+
+\noindent\textsc{Hashtag}(\uline{Name}, Anzahl)
+
+\noindent\textsc{T\_enth\_H}(\uline{ID}, \dashuline{T\_ID}, \dashuline{H\_Name}, wie\_oft)
+
+\noindent\textsc{Hashtag\_Paare}(\uline{ID}, Name1, Name2, Anzahl)
+
+\noindent\textsc{H\_bilden\_HP}(\uline{ID}, \dashuline{H\_Name}, \dashuline{HP\_ID})
+
+\noindent\textsc{T\_enth\_HP}(\uline{ID}, \dashuline{T\_ID}, \dashuline{HP\_ID}, wie\_oft)
 
 \end{document}
