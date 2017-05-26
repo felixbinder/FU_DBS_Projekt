@@ -154,6 +154,8 @@ Das ER"=Modell für das Projekt sieht wie folgt aus:
  \node[entity] (hash_p) [below=5cm of hash,align=center] {Hashtag-\\Paare} edge [total] node[auto,swap]{M} (ent);
     \node[attribute] (anzahl) [below= of hash_p] {Anzahl\_global} edge (hash_p);
     \node[attribute] (hp_id) [below right=1cm of hash_p] {\key{ID}} edge (hash_p);
+    \node[attribute] (name2) [right=0.4cm of hash_p] {name2} edge (hash_p);
+    \node[attribute] (name1) [above right=1cm of hash_p] {name1} edge (hash_p);
     
  \draw[link] [total] (bilden)  -/ node[right,swap]{M} (hash_p);
     
@@ -176,7 +178,7 @@ Außerdem haben wir uns nach einigem Hin und Her dazu entschlossen, den Autor ei
 
 \noindent\textsc{T\_enth\_H}(\uline{\dashuline{Tweet\_ID}, \dashuline{H\_Name}}, wie\_oft)
 
-\noindent\textsc{Hashtag\_Paare}(\uline{ID}, Anzahl\_global)
+\noindent\textsc{Hashtag\_Paare}(\uline{ID}, Anzahl\_global, \dashuline{name1}, \dashuline{name2})
 
 \noindent\textsc{Hashtags\_bilden\_HP}(\uline{\dashuline{Hash\_Name}, \dashuline{HP\_ID}})
 
