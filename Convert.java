@@ -22,8 +22,28 @@ public class Convert {
             
             // Übertragen aus der Quell- in die Zieldatei in der neuen Codierung.
             while ( (puffer = input.readLine()) != null) {
+                
+                // Ersetze im Datensatz alle Semikola, die keine Trennzeichen sind.
+                puffer = puffer.replaceAll("&amp;", "&amp,");
+                puffer = puffer.replaceAll("&gt;", "&gt,");
+                puffer = puffer.replaceAll("women who work;", "women who work:");
+                puffer = puffer.replaceAll("just for some Americans;", "just for some Americans:");
+                puffer = puffer.replaceAll("up to dictators;", "up to dictators:");
+                puffer = puffer.replaceAll("We can’t contain ISIS;", "We can’t contain ISIS:");
+                puffer = puffer.replaceAll("daunting the odds;", "daunting the odds:");
+                puffer = puffer.replaceAll("to summon what’s best in us;", "to summon what’s best in us:");
+                puffer = puffer.replaceAll("We don’t fear the future;", "We don’t fear the future:");
+                puffer = puffer.replaceAll("&lt;", "&lt,");
+                puffer = puffer.replaceAll("7,546,980; @tedcruz 5,481,737;", "7,546,980, @tedcruz 5,481,737,");
+                puffer = puffer.replaceAll("Endorses Donald Trump for president;", "Endorses Donald Trump for president,");
+                
                 output.write(puffer);
-                output.newLine();
+                
+                // Entferne alle Umbrüche in den Tweets und ersetze sie so, daß sie wiederherstellbar sind.
+                if (puffer.endsWith("True") || puffer.endsWith("False")) {
+                    output.newLine();
+                    }
+                else { output.write("[UMBRUCH]"); }
                 }
             
             // Datei schließen.
