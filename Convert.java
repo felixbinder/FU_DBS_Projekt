@@ -40,10 +40,10 @@ public class Convert {
                 output.write(puffer);
                 
                 // Entferne alle Umbrüche in den Tweets und ersetze sie so, daß sie wiederherstellbar sind.
-                if (puffer.endsWith("True") || puffer.endsWith("False")) {
+                if (puffer.endsWith("True") || puffer.endsWith("False") || puffer.endsWith("truncated")) {
                     output.newLine();
                     }
-                else { output.write("[UMBRUCH]"); }
+                else { output.write("<br />"); }
                 }
             
             // Datei schließen.
