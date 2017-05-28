@@ -1,5 +1,7 @@
 import java.io.*;
 import java.sql.*;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
 
 public class Insert {
     
@@ -10,6 +12,11 @@ public class Insert {
         String[] datensatz = new String[11];
         String temp;
         PreparedStatement pst = null;
+        Pattern patt = Pattern.compile("(#\\w+)\\b");
+        Matcher match;
+        int hashtags = 0;
+        String tag;
+        ResultSet result;
         
         try {
             // Datenbankverbindung vorbereiten, Datei öffnen.
@@ -53,7 +60,61 @@ public class Insert {
             	// Eintragen in Datenbank (Durchführung)
             	pst.executeUpdate();
             	
-            	System.out.print("Datensätze importiert: "+i+"/"+datensätze+"\r");
+            	
+            	// Suche nach Hashtags
+            	if (datensatz[1].contains("#")) {
+            		match = patt.matcher(datensatz[1]);
+            		// Solange Hashtags vorhanden, füge sie in die Hashtag-Tabelle ein.
+            		while(match.find()){
+        			tag = match.group(1);
+        			//System.out.println(tag);
+        			pst = c.prepareStatement("SELECT COUNT(name) FROM hashtag WHERE name=?");
+        			pst.setString(1, tag);
+        			result = pst.executeQuery();
+        			if (result.next()){
+	        			if (result.getInt(1) == 0) {
+	        				// Neueintrag
+	        				pst = c.prepareStatement("INSERT INTO Hashtag(name, anzahl_global) VALUES (?, ?)");
+	        				pst.setString(1, tag);
+	        				pst.setInt(2, 1);
+	        				pst.executeUpdate();
+	        				}
+	        			else {
+	        				// Anzahl erhöhen
+	        				pst = c.prepareStatement("UPDATE Hashtag SET anzahl_global = anzahl_global+1 WHERE name=?"); // Einfach add?
+	        				pst.setString(1,tag);
+	        				pst.executeUpdate();
+	        				}
+	        			
+	        			// Füge Information über gefundene Hashtags in T_enth_H-Tabelle ein.
+	        			// Frage: Eintrag schon vorhanden?
+	        			pst = c.prepareStatement("SELECT count(tweet_id) FROM t_enth_h WHERE tweet_id=? AND h_name=?");
+	        			pst.setInt(1,(i-1));
+	        			pst.setString(2, tag);
+	        			result = pst.executeQuery();
+	        			if (result.next()){
+						if (result.getInt(1) == 0) {
+							// Neueintrag
+							pst = c.prepareStatement("INSERT INTO T_enth_H(tweet_id, h_name, wie_oft) VALUES (?, ?,?)");
+							pst.setString(2, tag);
+							pst.setInt(1, (i-1));
+							pst.setInt(3, 1);
+							pst.executeUpdate();
+							}
+						else {
+							// Anzahl erhöhen
+							pst = c.prepareStatement("UPDATE T_enth_H SET wie_oft = wie_oft+1 WHERE tweet_id=? AND h_name=?"); // Einfach add?
+							pst.setInt(1,(i-1));
+							pst.setString(2, tag);
+							pst.executeUpdate();
+							}
+						}
+	        			}
+        			++hashtags;
+    				}
+            		}
+            	
+            	System.out.print("Datensätze importiert: "+i+"/"+datensätze+"; außerdem: "+hashtags+" Hashtags gefunden.\r");
             	}
             System.out.print("\n");
             }
