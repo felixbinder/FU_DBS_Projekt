@@ -157,7 +157,7 @@ public class Insert {
             			continue;
             			}
             		// richtige Ordnung herstellen, um Doubletten zu vermeiden.
-            		if (hashtag1.compareToIgnoreCase(hashtag2) > 0) {
+            		if (hashtag1.toLowerCase().compareTo(hashtag2.toLowerCase()) > 0) {
             			temp = hashtag1;
             			hashtag1 = hashtag2;
             			hashtag2 = temp;

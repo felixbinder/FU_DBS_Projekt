@@ -26,7 +26,7 @@ CREATE TABLE Hashtag_Paare (
 	name1	VARCHAR(50)	REFERENCES Hashtag(Name),
 	name2	VARCHAR(50) 	REFERENCES Hashtag(Name),
 	Anzahl_global INT,
-	CHECK (name1 < name2)
+	CHECK (lower(name1) < lower(name2))
 );
 
 CREATE TABLE Hashtags_bilden_HP(
