@@ -10,6 +10,7 @@
 \usepackage{tocloft}
 \usepackage[medium]{titlesec}
 \usepackage{color}
+\usepackage{hyperref}
 \usepackage[inner=2.2cm,outer=2.2cm,top=2cm,bottom=2cm,includefoot,footskip=14mm]{geometry}
 \usepackage{scrpage2}
 \usepackage[final]{microtype}
@@ -202,4 +203,18 @@ Der Code dafür war:
 	    CONNECTION LIMIT = -1;
 \end{verbatim}
 
+\subsection{Datenbankschema erstellen}
+\url{https://github.com/felixbinder/FU_DBS_Projekt/blob/master/election.sql}
+
+\subsection{Datenbereinigung}
+\url{https://github.com/felixbinder/FU_DBS_Projekt/blob/master/Convert.java}
+
+\subsection{Datenimport}
+\url{https://github.com/felixbinder/FU_DBS_Projekt/blob/master/Insert.java}
+
+\subsection{Webserver}
+Wir haben einen Apache2-Server unter Ubuntu aufgesetzt. Dazu nutzten wir \verb|sudo apt-get install apache2|. Der Server wird mit \verb|sudo service apache2 start| gestartet. Die Default-Konfiguration von Apache erscheint uns fürs Erste ausreichend.
+
 \end{document}
+
+
