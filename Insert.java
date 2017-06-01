@@ -2,7 +2,8 @@ import java.io.*;
 import java.sql.*;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
-import java.util.LinkedList;
+import java.util.ArrayList;
+import java.util.Objects;
 
 public class Insert {
     
@@ -11,22 +12,24 @@ public class Insert {
         Connection c = null;
         int datensätze = 6126;
         String[] datensatz = new String[11];
+        ArrayList<String> temp_datensatz = new ArrayList<String>();
+		ArrayList<String> temp_datensatz2 = new ArrayList<String>();
+        ArrayList<String> hashtag = new ArrayList<String>();
+        ArrayList<Integer> hashtagPaare = new ArrayList<Integer>();
         String temp;
         PreparedStatement pst = null;
         Pattern patt = Pattern.compile("(#\\w+)\\b");
         Matcher match;
         int hashtags = 0;
-        int tweet_id = 0, paar_id = 0;
         String tag;
-        ResultSet result, result_hashtags_in_tweets;
-        LinkedList<String> list;
-        String hashtag1, hashtag2;
+        ResultSet result;
+        ResultSet result_temp;
         
         try {
             // Datenbankverbindung vorbereiten, Datei öffnen.
             Class.forName("org.postgresql.Driver");
-            c = DriverManager.getConnection("jdbc:postgresql://localhost/Election",
-            "testuser", "testpass");
+            c = DriverManager.getConnection("jdbc:postgresql://localhost/election",
+            "postgres", "postgres");
             File file = new File("./american-election-tweets-utf8.csv");
             BufferedReader input = new BufferedReader(new InputStreamReader(new FileInputStream(file), "UTF-8"));
             // Die erste Zeile ist zu überspringen, da sie keine relevanten Daten enthält.
@@ -68,11 +71,21 @@ public class Insert {
             	// Suche nach Hashtags
             	if (datensatz[1].contains("#")) {
             		match = patt.matcher(datensatz[1]);
+
+                    while(temp_datensatz.size() > 0) {
+                        temp_datensatz.remove(0);
+                    }
+
             		// Solange Hashtags vorhanden, füge sie in die Hashtag-Tabelle ein.
-            		while(match.find()){
-        			tag = match.group(1);
-        			//System.out.println(tag);
-        			pst = c.prepareStatement("SELECT COUNT(name) FROM hashtag WHERE name=?");
+            		while(match.find()) {
+                        tag = match.group(1);
+
+
+        			temp_datensatz.add(tag); // Hashtags des aktuellen Tweets werden für die Generierung der Hashtag Paare zwischengespeichert
+
+        			//System.out.println(temp_datensatz.get(0));
+
+        			pst = c.prepareStatement("SELECT COUNT(name) FROM Hashtag WHERE name=?");
         			pst.setString(1, tag);
         			result = pst.executeQuery();
         			if (result.next()){
@@ -113,129 +126,155 @@ public class Insert {
 							pst.executeUpdate();
 							}
 						}
+
+
 	        			}
         			++hashtags;
     				}
-            		}
+
+					// Füge Information über gefundene Hashtags in Hashtag-Paare-Tabelle ein.
+
+                    // 1. Schritt Hashtag-Paare bilden
+                    while(temp_datensatz2.size() > 0) {          // temporäres Array 2 für Hashtag-Paare wird geleert
+                        temp_datensatz2.remove(0);
+                    }
+                        int e = 1;
+						while(e < temp_datensatz.size()){
+
+							for (int z=1; z<temp_datensatz.size(); z++){
+                                            if(!(Objects.equals(temp_datensatz.get(0),temp_datensatz.get(z)))) {
+                                                temp_datensatz2.add(temp_datensatz.get(0));            // Schreibe hashtag paar
+                                                temp_datensatz2.add(temp_datensatz.get(z));
+                                            }
+									}
+                            temp_datensatz.remove(0);
+								}
+
+
+
+                    // 2. Schritt : Prüfen ob Hashtag-Paare bereits vorhanden, falls nicht, dann einfügen, sonst Anzahl_global erhöhen.
+                while(temp_datensatz2.size() > 1) {
+
+							pst = c.prepareStatement("SELECT count(name1) FROM Hashtag_Paare WHERE (name1=? AND name2=?) OR (name1=? AND name2=?)");
+							pst.setString(1,temp_datensatz2.get(0));
+							pst.setString(2, temp_datensatz2.get(1));
+                            pst.setString(3,temp_datensatz2.get(1));
+                            pst.setString(4, temp_datensatz2.get(0));
+							result = pst.executeQuery();
+							if (result.next()){
+								if (result.getInt(1) == 0) {
+									// Neueintrag
+
+                                    // Primary ID MAX abfragen
+                                    pst = c.prepareStatement("SELECT max(ID) from Hashtag_Paare");
+                                    result = pst.executeQuery();
+
+                                    if (result.next()){
+                                    int temp2 = result.getInt(1)+1;
+
+									pst = c.prepareStatement("INSERT INTO Hashtag_Paare(ID, name1, name2, Anzahl_global) VALUES (?,?,?,?)"); //ID wird automatisch ohne Eingabe laufend erhöht
+                                    pst.setInt(1, temp2);
+                                    if (temp_datensatz2.get(0).toLowerCase().compareTo(temp_datensatz2.get(1).toLowerCase()) < 0){
+                                        pst.setString(2,temp_datensatz2.get(0));
+        	                            pst.setString(3, temp_datensatz2.get(1));
+        	                            }
+        	                    else {
+   	                    		    pst.setString(3,temp_datensatz2.get(0));
+        	                            pst.setString(2, temp_datensatz2.get(1));
+        	                    		}
+									pst.setInt(4, 1);
+									pst.executeUpdate();
+                                    }
+								}
+                                else {
+                                    // Anzahl_global erhöhen
+                                    pst = c.prepareStatement("UPDATE Hashtag_Paare SET Anzahl_global = Anzahl_global+1 WHERE (name1=? AND name2=?) OR (name1=? AND name2=?)");
+                                    pst.setString(1,temp_datensatz2.get(0));
+                                    pst.setString(2, temp_datensatz2.get(1));
+                                    pst.setString(3, temp_datensatz2.get(1));
+                                    pst.setString(4,temp_datensatz2.get(0));
+                                    pst.executeUpdate();
+                                }
+							}
+							// T_enth_HP befüllen
+
+                            pst = c.prepareStatement("SELECT max(ID) from Hashtag_Paare"); // Hashtag Paar ID des eben eingefügten Paars abfragen
+                            result = pst.executeQuery();
+                            if (result.next()){
+                            // Prüfen, ob Eintrag bereits vorhanden
+
+                            pst = c.prepareStatement("SELECT count(wie_oft) FROM T_enth_HP WHERE (Tweet_ID=? AND Hashpaar_ID=?)");
+                            pst.setInt(1,(i-1));
+                            pst.setInt(2, result.getInt(1));
+                            result_temp = pst.executeQuery();
+
+                            if(result_temp.next()){
+                                if (result_temp.getInt(1) == 0){
+                                     pst = c.prepareStatement("INSERT INTO T_enth_HP(Tweet_ID, Hashpaar_ID, wie_oft) VALUES (?,?,?)"); //ID wird automatisch ohne Eingabe laufend erhöht
+                                     pst.setInt(1, (i-1)); // Tweet ID
+                                     pst.setInt(2, result.getInt(1)); // Hashtag-Paar ID
+                                     pst.setInt(3, 1); // WIE_OFT
+                                     pst.executeUpdate();
+                                }else{
+                                    pst = c.prepareStatement("UPDATE T_enth_HP SET wie_oft = wie_oft+1 WHERE Tweet_ID=? AND Hashpaar_ID=?");
+                                    pst.setInt(1, (i-1)); // Tweet ID
+                                    pst.setInt(2, result.getInt(1)); // Hashtag-Paar ID
+                                    pst.executeUpdate();
+                                }
+
+                             }
+                            }
+                            temp_datensatz2.remove(0);
+                            temp_datensatz2.remove(0);
+                }
+
+
+						}
+
+
+
+
+
+
+
             	
             	System.out.print("Datensätze importiert: "+i+"/"+datensätze+"; außerdem: "+hashtags+" Hashtags gefunden.\r");
             	}
-            System.out.print("\n");
-            
-            // Variable nun benutzen für das Zählen der Hashtag-Paare.
-            hashtags = 0;
-            
-            
-            // ******* Hashtag-Paare finden *********
-            pst = c.prepareStatement("SELECT Tweet_ID, COUNT(Tweet_ID) FROM t_enth_h GROUP BY Tweet_ID HAVING COUNT(Tweet_ID) > 1 ORDER BY COUNT(*) DESC");
+            // 3. Schritt Relationstabelle Hashtags_bilden_HP befüllen. Dies wird komplett aus den bereits vorhandenen Daten via SQL Befehlen geleistet.
+            pst = c.prepareStatement("SELECT Name FROM Hashtag");  // Projektion aller Hashtags
             result = pst.executeQuery();
-            
-            while (result.next()){
-            	
-            	list = new LinkedList<String>();
-            	tweet_id = result.getInt(1);
-            
-            	
-            	pst = c.prepareStatement("SELECT h_name FROM T_enth_H WHERE Tweet_ID = ?");
-            	pst.setInt(1, tweet_id); // Tweet-ID aus der Abfrage für die neue Abfrage nutzen.
-            	
-            	// Ergebnis in Liste einlesen
-            	result_hashtags_in_tweets = pst.executeQuery();
-            	while (result_hashtags_in_tweets.next()) {
-            		list.add(result_hashtags_in_tweets.getString(1));
-            		}
-            	
-            	// Alle Tupel der Hashtags bilden.
-            	while (list.size() > 1) {
-            		//System.out.print(list.get(0)+" "+list.get(1));
-            		hashtag1 = list.get(0);
-            		hashtag2 = list.get(1);
-            		
-            		// Sind beide Hashtags identisch, sind sie kein Paar in unserem Sinne.
-            		if (hashtag1.equals(hashtag2)) {
-            			list.pop();
-            			continue;
-            			}
-            		// richtige Ordnung herstellen, um Doubletten zu vermeiden.
-            		if (hashtag1.toLowerCase().compareTo(hashtag2.toLowerCase()) > 0) {
-            			temp = hashtag1;
-            			hashtag1 = hashtag2;
-            			hashtag2 = temp;
-            			}
-            		
-            		// Paar in der Datenbank schon vorhanden?
-            		pst = c.prepareStatement("SELECT count(ID), ID FROM Hashtag_Paare WHERE name1=? AND name2=? GROUP BY ID");
-            		pst.setString(1,hashtag1);
-            		pst.setString(2,hashtag2);
-            		result_hashtags_in_tweets = pst.executeQuery();
-            		if ( result_hashtags_in_tweets.next()) {
-            			// Falls ja, aktualisiere diesen Eintrag
-            			if (result_hashtags_in_tweets.getInt(1) == 1) {
-            				paar_id = result_hashtags_in_tweets.getInt(2);
-            				pst = c.prepareStatement("UPDATE Hashtag_Paare SET Anzahl_global = Anzahl_global +1 WHERE ID = ?");
-            				pst.setInt(1,paar_id);
-            				pst.executeUpdate();
-            				}
-            			}
-            		// Falls nein, trage Datensatz neu ein (und auch gleich Verweis in Relation Hashtags_bilden_HP).
-            		else {
-            			pst = c.prepareStatement("INSERT INTO Hashtag_Paare(name1, name2, Anzahl_global) VALUES (?,?,?)", Statement.RETURN_GENERATED_KEYS);
-            			pst.setString(1,hashtag1);
-            			pst.setString(2,hashtag2);
-            			pst.setInt(3,1);
-            			pst.executeUpdate();
-            			
-            			// Was war die ID beim Einfügen in Hashtag_Paare?
-            			ResultSet generatedKeys = pst.getGeneratedKeys();
-		                if (generatedKeys.next()) {
-			                paar_id = generatedKeys.getInt(1);
-			                }
-        	    		
-            			// Update Hashtags_bilden_HP
-            			pst = c.prepareStatement("INSERT INTO Hashtags_bilden_HP(Hash_Name, HP_ID) VALUES (?,?)");
-            			pst.setString(1, hashtag1);
-            			pst.setInt(2,paar_id);
-            			pst.executeUpdate();
-            			
-            			pst = c.prepareStatement("INSERT INTO Hashtags_bilden_HP(Hash_Name, HP_ID) VALUES (?,?)");
-            			pst.setString(1, hashtag2);
-            			pst.setInt(2,paar_id);
-            			pst.executeUpdate();
-            			}
-            		
-            		// Eintrag in T_enth_HP schon enthalten?
-            		pst = c.prepareStatement("SELECT COUNT(Tweet_ID) FROM T_enth_HP WHERE Hashpaar_ID = ? AND Tweet_ID = ?");
-            		pst.setInt(1,paar_id);
-            		pst.setInt(2,tweet_id);
-            		result_hashtags_in_tweets = pst.executeQuery();
-            		
-            		// Wenn ja, erhöhe Zähler in der Datenbank
-            		if (result_hashtags_in_tweets.next()) {
-            			if (result_hashtags_in_tweets.getInt(1) == 1) {
-            				pst = c.prepareStatement("UPDATE T_enth_HP SET wie_oft = wie_oft+1 WHERE Hashpaar_ID = ? AND Tweet_ID = ?");
-            				pst.setInt(1,paar_id);
-		            		pst.setInt(2,tweet_id);
-		            		pst.executeUpdate();
-            				}
-            			}
-            		//Andernfalls füge Eintrag hinzu.
-            		pst = c.prepareStatement("INSERT INTO T_enth_HP(Tweet_ID, Hashpaar_ID, wie_oft) VALUES (?,?,?)");
-            		pst.setInt(2,paar_id);
-            		pst.setInt(1,tweet_id);
-            		pst.setInt(3,1);
-            		pst.executeUpdate();
-		            		
-            		
-            		// Kopf der Liste entfernen, um die restlichen Tupel zu bilden
-            		list.pop();
-            		++hashtags;
-            		System.out.print(hashtags+" Hashtag-Tupel gefunden.\r");
-            		}
-            	
-            	list = null;
-            	}
-            System.out.println("\nFertig!");
-            
+            while(hashtag.size() > 0) {          // Hashtag Liste wird geleert
+                 hashtag.remove(0);
+            }
+
+            while(result.next()){                                  // Hashtags werden in Liste eingelesen
+                hashtag.add(result.getString(1));
+            }
+
+            while(hashtag.size()>0){
+            pst = c.prepareStatement("SELECT ID FROM Hashtag_Paare WHERE name1=? OR name2=?");
+            pst.setString(1,hashtag.get(0));
+            pst.setString(2,hashtag.get(0));
+            result = pst.executeQuery();
+            while(result.next()) {
+                hashtagPaare.add(result.getInt(1));    // Hashtag Paare, die Hashtag enthalten werden in Liste eingelesen
+            }
+            while(hashtagPaare.size()>0) {
+                pst = c.prepareStatement("INSERT INTO Hashtags_bilden_HP(Hash_Name, HP_ID) VALUES (?,?)");
+                pst.setString(1, hashtag.get(0));
+                pst.setInt(2, hashtagPaare.get(0));
+                pst.executeUpdate();
+                hashtagPaare.remove(0);
+            }
+            hashtag.remove(0);
+            }
+
+           
+
+
+
+
+            System.out.print("\n");
             }
         catch (FileNotFoundException e) { e.printStackTrace();}
         catch (UnsupportedEncodingException e) { e.printStackTrace();}
