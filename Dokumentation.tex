@@ -10,7 +10,7 @@
 \usepackage{tocloft}
 \usepackage[medium]{titlesec}
 \usepackage{color}
-\usepackage{hyperref}
+\usepackage[colorlinks=true,linkcolor=black,anchorcolor=black,citecolor=black,filecolor=black,menucolor=black,urlcolor=black]{hyperref}
 \usepackage[inner=2.2cm,outer=2.2cm,top=2cm,bottom=2cm,includefoot,footskip=14mm]{geometry}
 \usepackage{scrpage2}
 \usepackage[final]{microtype}
@@ -213,7 +213,7 @@ Der Code dafür war:
 \url{https://github.com/felixbinder/FU_DBS_Projekt/blob/master/Insert.java}
 
 \subsection{Webserver}
-Wir haben einen Apache2-Server unter Ubuntu aufgesetzt. Dazu nutzten wir \verb|sudo apt-get install apache2|. Der Server wird mit \verb|sudo service apache2 start| gestartet. Die Default-Konfiguration von Apache erscheint uns fürs Erste ausreichend.
+Wir haben einen Apache2-Server unter Ubuntu aufgesetzt. Dazu nutzten wir \begin{sffamily}sudo apt-get install apache2\end{sffamily}. Der Server wird mit \begin{sffamily}sudo service apache2 start\end{sffamily} gestartet. Die Konfiguration haben wir unseren Bedürfnissen angepasst.
 
 \end{document}
 
