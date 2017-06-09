@@ -1,0 +1,12 @@
+def aehnlichkeit(hashtag A, hashtag B):
+	aehnlichkeit = 0
+	count = 0
+	for each tweet T with hashtag A:
+		for each tweet V with hashtag B:
+			count += 1
+			if (V.ID == T.ID)#wenn die Hashtags im selben Tweet auftauchen
+				aehnlichkeit+=10#Wert wählen
+			else#wenn Hashtags in unterschiedlichen Tweets auftauchen
+				aehnlichkeit+=1/((T.date-V.date) ** 2) #Hier eine quadratische Abfallfunktion, müssen wir ein bisschen rumexperimentieren
+	aehnlichkeit/count#Dadurch wird die durschnittliche Entfernung berechnet. Könnte hier aber problematisch sein, weil viele B-Tweets die Metrik verwässern. Könnten count abhängig machen von Nähe oder einen Cutoff geben oder A-Durchläufe zählen oder B Tweets nicht für jeden A Tweet zählen, sondern nur für den nächsten (das scheint mir das cleverste)
+	return aehnlichkeit
