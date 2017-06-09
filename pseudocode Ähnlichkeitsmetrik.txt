@@ -38,6 +38,6 @@ def aehnlichkeit3(hashtag A, hashtag B): #hier der zweite Vorschlag ausformulier
 			else#wenn Hashtags in unterschiedlichen Tweets auftauchen
 				aehnlichkeit+=1/((T.date-V.date) ** 2) #Hier eine quadratische Abfallfunktion, müssen wir ein bisschen rumexperimentieren
 		count += 1
-	aehnlichkeit = (aehnlichkeit3(B,A) + aehnlichkeit/count)/2 #Wir lassen einfach noch die Ähnlichkeit in die andere Richtung berechnen, somit ist das Haufenproblem erledigt und die Metrik ist symmetrisch, also aehnlichkeit(A,B) == aehnlichkeit(B,A), was bei 1 und 2 nicht unbedingt gilt.
+	aehnlichkeit = (aehnlichkeit2(B,A) + aehnlichkeit/count)/2 #Wir lassen einfach noch die Ähnlichkeit in die andere Richtung berechnen, somit ist das Haufenproblem erledigt und die Metrik ist symmetrisch, also aehnlichkeit(A,B) == aehnlichkeit(B,A), was bei 1 und 2 nicht unbedingt gilt.
 	return aehnlichkeit
 
