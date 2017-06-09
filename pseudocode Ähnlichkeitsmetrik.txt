@@ -1,4 +1,4 @@
-def aehnlichkeit(hashtag A, hashtag B):
+def aehnlichkeit1(hashtag A, hashtag B):
 	aehnlichkeit = 0
 	count = 0
 	for each tweet T with hashtag A:
@@ -8,5 +8,20 @@ def aehnlichkeit(hashtag A, hashtag B):
 				aehnlichkeit+=10#Wert wählen
 			else#wenn Hashtags in unterschiedlichen Tweets auftauchen
 				aehnlichkeit+=1/((T.date-V.date) ** 2) #Hier eine quadratische Abfallfunktion, müssen wir ein bisschen rumexperimentieren
-	aehnlichkeit/count#Dadurch wird die durschnittliche Entfernung berechnet. Könnte hier aber problematisch sein, weil viele B-Tweets die Metrik verwässern. Könnten count abhängig machen von Nähe oder einen Cutoff geben oder A-Durchläufe zählen oder B Tweets nicht für jeden A Tweet zählen, sondern nur für den nächsten (das scheint mir das cleverste)
+	aehnlichkeit = aehnlichkeit/count#Dadurch wird die durschnittliche Entfernung berechnet. Könnte hier aber problematisch sein, weil viele B-Tweets die Metrik verwässern. Könnten count abhängig machen von Nähe oder einen Cutoff geben oder A-Durchläufe zählen oder B Tweets nicht für jeden A Tweet zählen, sondern nur für den nächsten (das scheint mir das cleverste)
+	return aehnlichkeit
+
+def aehnlichkeit2(hashtag A, hashtag B): #hier der zweite Vorschlag ausformuliert: es zählt nur die Nähe eines B-tweets zum nächsten A-Tweet. Mögliches Problem: wenn sich viele B-Hashtags um einen A-Hashtag sammeln und viele A-Hashtags alleine stehen, so gibt es trotzdem einen hohen Wert
+	aehnlichkeit = 0
+	count = 0
+	btweets = [alle Tweets, die Hashtag B enthalten]
+	while btweets not empty:
+		V = btweets.pop()
+		find tweet T so that abs(V.date-T.date) minimal and T contains Hashtag A
+		if (V == T.ID)#wenn die Hashtags im selben Tweet auftauchen
+				aehnlichkeit+=10#Wert wählen
+			else#wenn Hashtags in unterschiedlichen Tweets auftauchen
+				aehnlichkeit+=1/((T.date-V.date) ** 2) #Hier eine quadratische Abfallfunktion, müssen wir ein bisschen rumexperimentieren
+		count += 1
+	aehnlichkeit = aehnlichkeit/count
 	return aehnlichkeit
