@@ -26,6 +26,7 @@ def aehnlichkeit2(hashtag A, hashtag B): #hier der zweite Vorschlag ausformulier
 	aehnlichkeit = aehnlichkeit/count
 	return aehnlichkeit
 
+#ToDo: Über die beiden Benutzer iterieren
 def aehnlichkeit3(hashtag A, hashtag B): #hier der zweite Vorschlag ausformuliert: es zählt nur die Nähe eines B-tweets zum nächsten A-Tweet. Mögliches Problem: wenn sich viele B-Hashtags um einen A-Hashtag sammeln und viele A-Hashtags alleine stehen, so gibt es trotzdem einen hohen Wert. Lösung: das ganze nochmal andersrum durchlaufen lassen.
 	aehnlichkeit = 0
 	count = 0
@@ -40,4 +41,11 @@ def aehnlichkeit3(hashtag A, hashtag B): #hier der zweite Vorschlag ausformulier
 		count += 1
 	aehnlichkeit = (aehnlichkeit2(B,A) + aehnlichkeit/count)/2 #Wir lassen einfach noch die Ähnlichkeit in die andere Richtung berechnen, somit ist das Haufenproblem erledigt und die Metrik ist symmetrisch, also aehnlichkeit(A,B) == aehnlichkeit(B,A), was bei 1 und 2 nicht unbedingt gilt.
 	return aehnlichkeit
+
+#Ok, wir müssen wohl einen metrischen Raum verwenden. Dieser erfordert 3 Dinge von unserer Funktion: (1) Positive Definitheit (Abstände größer 0 bzw. 0 für identische Elemente), (2) Symmetrie und (3) Dreiecksungleichung (d(x,z)≤d(x,y)+d(y,z))
+
+def metrik1(hashtag A, hashtag B): #Symmetrie gegeben, Definitheit gegeben, Dreiecksungleichung gegeben? Bin ein bisschen skeptisch, dass das geht, wenn wir uns nur den nächsten Tweet ansehen. Wenn wir uns bei jedem Tweet alle ansehen würden, sagt meine Intuition aber, dass die gewährt sein sollte. Gedanken?
+	if A == B:
+		return 0
+	return 1/aehnlichkeit3(A,B)
 
