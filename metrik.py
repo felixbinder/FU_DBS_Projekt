@@ -13,7 +13,7 @@ def cosine_similarity(v1,v2):
     return sumxy/math.sqrt(sumxx*sumyy)
 
 def main():
-	dimensionen = 6126 # Entspricht der Gesamtzahl an Tweets
+	dimensionen = 6126 # Entspricht der Gesamtzahl an Tweets || Sollten wir sowas nicht nicht hardcoden? Unsere Analyse wird, soweit ich weiß, auf einem anderen Datensatz laufen gelassen
 
 	 
 	# Verbinden mit der Datenbank
