@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+#Achtung, braucht eine Weile zum Ausführen!
 import psycopg2
 import math
 from datetime import datetime
@@ -44,5 +44,5 @@ def aehnlichtkeit(htA, htB):
 		if md == 0:
 			aehnlichkeit+100 #Wert wählen!
 		else: 
-			aehnlichkeit += 1/min(distance) #Divide by 1 Error for HTS
+			aehnlichkeit += 1000/min(distance)
 	return aehnlichkeit
