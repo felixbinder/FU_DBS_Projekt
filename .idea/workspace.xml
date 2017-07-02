@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="884a2666-f257-465f-9b8a-cb3d2fba352e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Clusterfindung.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dokumentation.pdf" afterPath="$PROJECT_DIR$/Dokumentation.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/12669/pg_internal.init" afterPath="$PROJECT_DIR$/Election/base/12669/pg_internal.init" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16385/pg_internal.init" afterPath="$PROJECT_DIR$/Election/base/16385/pg_internal.init" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/1247" afterPath="$PROJECT_DIR$/Election/base/16386/1247" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/1247_fsm" afterPath="$PROJECT_DIR$/Election/base/16386/1247_fsm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/1247_vm" afterPath="$PROJECT_DIR$/Election/base/16386/1247_vm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/1249" afterPath="$PROJECT_DIR$/Election/base/16386/1249" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/1249_fsm" afterPath="$PROJECT_DIR$/Election/base/16386/1249_fsm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/1249_vm" afterPath="$PROJECT_DIR$/Election/base/16386/1249_vm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/1259" afterPath="$PROJECT_DIR$/Election/base/16386/1259" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/1259_fsm" afterPath="$PROJECT_DIR$/Election/base/16386/1259_fsm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/1259_vm" afterPath="$PROJECT_DIR$/Election/base/16386/1259_vm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2604" afterPath="$PROJECT_DIR$/Election/base/16386/2604" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2606" afterPath="$PROJECT_DIR$/Election/base/16386/2606" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2606_vm" afterPath="$PROJECT_DIR$/Election/base/16386/2606_vm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2608" afterPath="$PROJECT_DIR$/Election/base/16386/2608" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2608_fsm" afterPath="$PROJECT_DIR$/Election/base/16386/2608_fsm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2608_vm" afterPath="$PROJECT_DIR$/Election/base/16386/2608_vm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2610" afterPath="$PROJECT_DIR$/Election/base/16386/2610" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2610_vm" afterPath="$PROJECT_DIR$/Election/base/16386/2610_vm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2619" afterPath="$PROJECT_DIR$/Election/base/16386/2619" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2619_fsm" afterPath="$PROJECT_DIR$/Election/base/16386/2619_fsm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2619_vm" afterPath="$PROJECT_DIR$/Election/base/16386/2619_vm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2620" afterPath="$PROJECT_DIR$/Election/base/16386/2620" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2656" afterPath="$PROJECT_DIR$/Election/base/16386/2656" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2657" afterPath="$PROJECT_DIR$/Election/base/16386/2657" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2658" afterPath="$PROJECT_DIR$/Election/base/16386/2658" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2659" afterPath="$PROJECT_DIR$/Election/base/16386/2659" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2662" afterPath="$PROJECT_DIR$/Election/base/16386/2662" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2663" afterPath="$PROJECT_DIR$/Election/base/16386/2663" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2664" afterPath="$PROJECT_DIR$/Election/base/16386/2664" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2665" afterPath="$PROJECT_DIR$/Election/base/16386/2665" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2666" afterPath="$PROJECT_DIR$/Election/base/16386/2666" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2667" afterPath="$PROJECT_DIR$/Election/base/16386/2667" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2673" afterPath="$PROJECT_DIR$/Election/base/16386/2673" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2674" afterPath="$PROJECT_DIR$/Election/base/16386/2674" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2678" afterPath="$PROJECT_DIR$/Election/base/16386/2678" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2679" afterPath="$PROJECT_DIR$/Election/base/16386/2679" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2696" afterPath="$PROJECT_DIR$/Election/base/16386/2696" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2699" afterPath="$PROJECT_DIR$/Election/base/16386/2699" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2701" afterPath="$PROJECT_DIR$/Election/base/16386/2701" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2702" afterPath="$PROJECT_DIR$/Election/base/16386/2702" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2703" afterPath="$PROJECT_DIR$/Election/base/16386/2703" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2704" afterPath="$PROJECT_DIR$/Election/base/16386/2704" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2840" afterPath="$PROJECT_DIR$/Election/base/16386/2840" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2840_fsm" afterPath="$PROJECT_DIR$/Election/base/16386/2840_fsm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2840_vm" afterPath="$PROJECT_DIR$/Election/base/16386/2840_vm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/2841" afterPath="$PROJECT_DIR$/Election/base/16386/2841" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/3455" afterPath="$PROJECT_DIR$/Election/base/16386/3455" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/base/16386/pg_internal.init" afterPath="$PROJECT_DIR$/Election/base/16386/pg_internal.init" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/global/1214" afterPath="$PROJECT_DIR$/Election/global/1214" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/global/pg_control" afterPath="$PROJECT_DIR$/Election/global/pg_control" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/global/pg_internal.init" afterPath="$PROJECT_DIR$/Election/global/pg_internal.init" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/pg_clog/0000" afterPath="$PROJECT_DIR$/Election/pg_clog/0000" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/pg_stat_tmp/db_0.stat" afterPath="$PROJECT_DIR$/Election/pg_stat_tmp/db_0.stat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/pg_stat_tmp/db_12669.stat" afterPath="$PROJECT_DIR$/Election/pg_stat_tmp/db_12669.stat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/pg_stat_tmp/db_16385.stat" afterPath="$PROJECT_DIR$/Election/pg_stat_tmp/db_16385.stat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/pg_stat_tmp/db_16386.stat" afterPath="$PROJECT_DIR$/Election/pg_stat_tmp/db_16386.stat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/pg_stat_tmp/global.stat" afterPath="$PROJECT_DIR$/Election/pg_stat_tmp/global.stat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/pg_subtrans/0000" afterPath="$PROJECT_DIR$/Election/pg_subtrans/0000" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Election/pg_xlog/000000010000000000000001" afterPath="$PROJECT_DIR$/Election/pg_xlog/000000010000000000000001" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbs-project-03.pdf" afterPath="$PROJECT_DIR$/dbs-project-03.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Insert.java" afterPath="$PROJECT_DIR$/Insert.java" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="FU_DBS_Projekt" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Clusterfindung.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="90" />
+    <option name="y" value="23" />
+    <option name="width" value="1324" />
+    <option name="height" value="1023" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FU_DBS_Projekt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FU_DBS_Projekt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager" selected="Python.Clusterfindung">
+    <configuration default="false" name="Clusterfindung" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FU_DBS_Projekt" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Clusterfindung.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FU_DBS_Projekt" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FU_DBS_Projekt" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FU_DBS_Projekt" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FU_DBS_Projekt" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FU_DBS_Projekt" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FU_DBS_Projekt" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FU_DBS_Projekt" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Python.Clusterfindung" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.Clusterfindung" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="884a2666-f257-465f-9b8a-cb3d2fba352e" name="Default" comment="" />
+      <created>1498928016067</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1498928016067</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="90" y="23" width="1324" height="1023" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494244" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Clusterfindung.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

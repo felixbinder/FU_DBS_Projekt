@@ -28,7 +28,7 @@ public class Insert {
         try {
             // Datenbankverbindung vorbereiten, Datei öffnen.
             Class.forName("org.postgresql.Driver");
-            c = DriverManager.getConnection("jdbc:postgresql://localhost/election",
+            c = DriverManager.getConnection("jdbc:postgresql://localhost/Election",
             "postgres", "postgres");
             File file = new File("./american-election-tweets-utf8.csv");
             BufferedReader input = new BufferedReader(new InputStreamReader(new FileInputStream(file), "UTF-8"));

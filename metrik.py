@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import psycopg2
 import math
 
@@ -59,7 +61,7 @@ def main():
 	
 	
 		i += 1
-		print (str(i)+"/91774", end="\r")
+		# print (str(i)+"/91774", end="\r")
 	connection.commit()
 	print (str(i)+"/91774")
 	
