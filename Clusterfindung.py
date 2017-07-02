@@ -35,7 +35,7 @@ def Clusterbildung(k_kmeans = 4, k_iterations = 30):
     print(ae_matrix)
 
     #K-Means ausfuehren
-    scipy.cluster.vq.whiten(ae_matrix) #Reskaliert die Werte jeder Dimension durch Division der Standardabweichung über alle Vorkommnisse. Das ist hier vermutlich nicht nötig, da die alle Dimensionen denselben Maßstab haben und vermutlich (aber denkbar!) nicht alle miteinander korrelieren
+    # scipy.cluster.vq.whiten(ae_matrix) #Reskaliert die Werte jeder Dimension durch Division der Standardabweichung über alle Vorkommnisse. Das ist hier vermutlich nicht nötig, da die alle Dimensionen denselben Maßstab haben und vermutlich (aber denkbar!) nicht alle miteinander korrelieren
     kmeans_result = scipy.cluster.vq.kmeans2(ae_matrix,k_kmeans,iter = k_iterations,minit='points') #Wir muessen minit=points setzen, sonst kommt eine Beschwerde, dass die Matrix nicht "positiv-definit" sei
     print(kmeans_result)
     centroids = kmeans_result[0]
