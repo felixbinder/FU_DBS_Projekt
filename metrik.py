@@ -1,34 +1,33 @@
-# -*- coding: utf-8 -*-
-
 import psycopg2
 import math
 
 
 def cosine_similarity(v1,v2):
-    "compute cosine similarity of v1 to v2: (v1 dot v2)/{||v1||*||v2||)"
-    sumxx, sumxy, sumyy = 0, 0, 0
-    for i in range(len(v1)):
-        x = v1[i]; y = v2[i]
-        sumxx += x*x
-        sumyy += y*y
-        sumxy += x*y
-    return sumxy/math.sqrt(sumxx*sumyy)
+	"Cosinus-Ähnlichkeit der beiden Vektoren v1 und v2 berechnen"
+	uu, uv, vv = 0, 0, 0
+	# Skalarprodukte berechnen
+	for i in range(len(v1)):
+		u = v1[i]; v = v2[i]
+		uu += u*u
+		vv += v*v
+		uv += u*v
+	return uv/math.sqrt(uu*vv)
 
 def main():
-	dimensionen = 6126 # Entspricht der Gesamtzahl an Tweets || Sollten wir sowas nicht nicht hardcoden? Unsere Analyse wird, soweit ich weiß, auf einem anderen Datensatz laufen gelassen
-
-	 
 	# Verbinden mit der Datenbank
 	connection = psycopg2.connect("dbname='Election' host='localhost' user='postgres' password='postgres'")
 
-
 	cursor = connection.cursor();
 
-	# Datenbankabfrage: 
+	# Datenbankabfrage zur Berechnung der Gesamtzahl an Tweets, also der Dimensionen des Vektorraums, den wir betrachten.
+	cursor.execute("SELECT count(id) FROM Tweet");
+	tupel = cursor.fetchall();
+	dimensionen = tupel[0][0] * 3 # zusätzliche Dimensionen für Anzahl der Retweets und Favorisierungen
+	
 	cursor.execute("SELECT B.name, A.Name FROM Hashtag AS A, Hashtag AS B WHERE A.name != B.name")
 
 	tupel = cursor.fetchall()
-
+	
 	i = 0
 	for t in tupel:
 		hashtag1 = t[0]
@@ -41,11 +40,15 @@ def main():
 		vektor2 = [0] * dimensionen
 	
 		# Vektor 1 berechnen
-		cursor.execute("SELECT Tweet_ID, wie_oft FROM T_enth_H WHERE H_Name = '"+hashtag1+"'");
+		cursor.execute("SELECT Tweet_ID, wie_oft, retweet_count, favorite_count FROM T_enth_H, Tweet WHERE H_Name = '"+hashtag1+"' AND Tweet.ID = T_enth_H.Tweet_ID");
+		#cursor.execute("SELECT Tweet_ID, wie_oft FROM T_enth_H WHERE H_Name = '"+hashtag1+"'");
 		vektordaten = cursor.fetchall()
+		#print (vektordaten)
 		for d in vektordaten:
 			vektor1[d[0]] = d[1]
-			#print(d[0],d[1])
+			vektor1[d[0]+1] = d[2]
+			vektor1[d[0]+2] = d[3]
+			#print(d[0],d[1])	
 		#print (vektor1)
 	
 		# Vektor 2 berechnen
@@ -54,14 +57,13 @@ def main():
 		for d in vektordaten:
 			vektor2[d[0]] = d[1]
 			#print(d[0],d[1])
-        # Cosinus-Abstand berechnen
-		result = 1 - cosine_similarity(vektor1, vektor2)
+		result = cosine_similarity(vektor1, vektor2)
 		
 		cursor.execute("INSERT INTO Hashtags_Aehnlichkeit(name1,name2,aehnlichkeit) VALUES('"+hashtag1+"','"+hashtag2+"',"+str(result)+")")
 	
 	
 		i += 1
-		# print (str(i)+"/91774", end="\r")
+		print (str(i)+"/91774", end="\r")
 	connection.commit()
 	print (str(i)+"/91774")
 	
