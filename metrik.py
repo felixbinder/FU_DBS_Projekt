@@ -57,7 +57,7 @@ def main():
 		for d in vektordaten:
 			vektor2[d[0]] = d[1]
 			#print(d[0],d[1])
-		result = cosine_similarity(vektor1, vektor2)
+		result = 1 - cosine_similarity(vektor1, vektor2) # Cosinus-Abstand
 		
 		cursor.execute("INSERT INTO Hashtags_Aehnlichkeit(name1,name2,aehnlichkeit) VALUES('"+hashtag1+"','"+hashtag2+"',"+str(result)+")")
 	
