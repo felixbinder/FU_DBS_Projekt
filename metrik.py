@@ -22,7 +22,7 @@ def main():
 	# Datenbankabfrage zur Berechnung der Gesamtzahl an Tweets, also der Dimensionen des Vektorraums, den wir betrachten.
 	cursor.execute("SELECT count(id) FROM Tweet");
 	tupel = cursor.fetchall();
-	dimensionen = tupel[0][0] * 3 # zusätzliche Dimensionen für Anzahl der Retweets und Favorisierungen
+	dimensionen = tupel[0][0]
 	
 	cursor.execute("SELECT B.name, A.Name FROM Hashtag AS A, Hashtag AS B WHERE A.name != B.name")
 
@@ -36,8 +36,8 @@ def main():
 			continue
 	
 		# Vektoren für Cosinus-Abstand bilden
-		vektor1 = [0] * dimensionen
-		vektor2 = [0] * dimensionen
+		vektor1 = [0] * dimensionen * 3 # zusätzliche Dimensionen für Anzahl der Retweets und Favorisierungen
+		vektor2 = [0] * dimensionen * 3 # zusätzliche Dimensionen für Anzahl der Retweets und Favorisierungen
 	
 		# Vektor 1 berechnen
 		cursor.execute("SELECT Tweet_ID, wie_oft, retweet_count, favorite_count FROM T_enth_H, Tweet WHERE H_Name = '"+hashtag1+"' AND Tweet.ID = T_enth_H.Tweet_ID");
@@ -46,16 +46,19 @@ def main():
 		#print (vektordaten)
 		for d in vektordaten:
 			vektor1[d[0]] = d[1]
-			vektor1[d[0]+1] = d[2]
-			vektor1[d[0]+2] = d[3]
+			vektor1[d[0]+dimensionen] = d[2]
+			vektor1[d[0]+(2*dimensionen)] = d[3]
 			#print(d[0],d[1])	
 		#print (vektor1)
 	
 		# Vektor 2 berechnen
-		cursor.execute("SELECT Tweet_ID, wie_oft FROM T_enth_H WHERE H_Name = '"+hashtag2+"'");
+		cursor.execute("SELECT Tweet_ID, wie_oft, retweet_count, favorite_count FROM T_enth_H, Tweet WHERE H_Name = '"+hashtag2+"' AND Tweet.ID = T_enth_H.Tweet_ID");
+		#cursor.execute("SELECT Tweet_ID, wie_oft FROM T_enth_H WHERE H_Name = '"+hashtag2+"'");
 		vektordaten = cursor.fetchall()
 		for d in vektordaten:
 			vektor2[d[0]] = d[1]
+			vektor2[d[0]+dimensionen] = d[2]
+			vektor2[d[0]+(2*dimensionen)] = d[3]
 			#print(d[0],d[1])
 		result = 1 - cosine_similarity(vektor1, vektor2) # Cosinus-Abstand
 		
