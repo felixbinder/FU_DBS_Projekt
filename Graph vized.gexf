@@ -1,0 +1,3373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.3" version="1.3" xmlns:viz="http://www.gexf.net/1.3/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.3 http://www.gexf.net/1.3/gexf.xsd">
+  <meta lastmodifieddate="2017-07-02">
+    <creator>Gephi 0.9</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="anzahl_global" title="Anzahl_global" type="integer"></attribute>
+    </attributes>
+    <nodes>
+      <node id="1" label="#1">
+        <attvalues>
+          <attvalue for="anzahl_global" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-42.278286" y="803.3471"></viz:position>
+      </node>
+      <node id="2" label="#2016">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-735.88873" y="-325.51645"></viz:position>
+      </node>
+      <node id="3" label="#2A">
+        <attvalues>
+          <attvalue for="anzahl_global" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-257.87796" y="486.32208"></viz:position>
+      </node>
+      <node id="4" label="#60Minutes">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="349.03958" y="-851.122"></viz:position>
+      </node>
+      <node id="5" label="#ADA">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="634.9243" y="170.14471"></viz:position>
+      </node>
+      <node id="6" label="#AIDSFreeGeneration">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-668.021" y="-1207.4633"></viz:position>
+      </node>
+      <node id="7" label="#AIPAC2016">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-527.21423" y="1275.9803"></viz:position>
+      </node>
+      <node id="8" label="#ALConvention2016">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-112.60533" y="353.30933"></viz:position>
+      </node>
+      <node id="9" label="#APAHM">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1048.7693" y="-435.2973"></viz:position>
+      </node>
+      <node id="10" label="#AZ">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1379.0972" y="58.213673"></viz:position>
+      </node>
+      <node id="11" label="#AZPrimary">
+        <attvalues>
+          <attvalue for="anzahl_global" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="670.40936" y="641.15186"></viz:position>
+      </node>
+      <node id="12" label="#ActOnClimate">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1309.1559" y="428.09113"></viz:position>
+      </node>
+      <node id="13" label="#AlwaysTrump">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1038.2275" y="-513.8815"></viz:position>
+      </node>
+      <node id="14" label="#AmericaFIRST">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-649.33374" y="1085.8477"></viz:position>
+      </node>
+      <node id="15" label="#AmericaFirst">
+        <attvalues>
+          <attvalue for="anzahl_global" value="61"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="255.13115" y="229.06607"></viz:position>
+      </node>
+      <node id="16" label="#AmericaGreatAgain">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="873.13477" y="940.4518"></viz:position>
+      </node>
+      <node id="17" label="#AmericanSamoa">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-297.74237" y="-536.9874"></viz:position>
+      </node>
+      <node id="18" label="#Arizona">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1106.1051" y="31.42547"></viz:position>
+      </node>
+      <node id="19" label="#ArizonaPrimary">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-244.07649" y="-335.78354"></viz:position>
+      </node>
+      <node id="20" label="#ArmedForcesDay">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1266.7804" y="538.03"></viz:position>
+      </node>
+      <node id="21" label="#ArmyBDay">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1150.1105" y="-212.21071"></viz:position>
+      </node>
+      <node id="22" label="#AsLongAsItTakes">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-211.47734" y="-457.60916"></viz:position>
+      </node>
+      <node id="23" label="#Benghazi">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="413.08963" y="418.52533"></viz:position>
+      </node>
+      <node id="24" label="#BikersForTrump">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-722.47046" y="297.89734"></viz:position>
+      </node>
+      <node id="25" label="#BlackMenForBernie">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-18.217596" y="-842.89795"></viz:position>
+      </node>
+      <node id="26" label="#BlackWomensEqualPay">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="934.4173" y="-644.884"></viz:position>
+      </node>
+      <node id="27" label="#BlacksForTrump">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-147.96274" y="-876.1454"></viz:position>
+      </node>
+      <node id="28" label="#Brexit">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="69.674286" y="571.16974"></viz:position>
+      </node>
+      <node id="29" label="#BrexitVote">
+        <attvalues>
+          <attvalue for="anzahl_global" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="613.3285" y="765.1621"></viz:position>
+      </node>
+      <node id="30" label="#Brussels">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="742.03357" y="741.53485"></viz:position>
+      </node>
+      <node id="31" label="#BuildTheWall">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-226.94899" y="-773.6609"></viz:position>
+      </node>
+      <node id="32" label="#Bush">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="996.8985" y="-542.18475"></viz:position>
+      </node>
+      <node id="33" label="#CA4Trump">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="167.3406" y="897.0974"></viz:position>
+      </node>
+      <node id="34" label="#CAPrimary">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="241.8556" y="-377.77103"></viz:position>
+      </node>
+      <node id="35" label="#CBNNews">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-902.4512" y="-1052.2285"></viz:position>
+      </node>
+      <node id="36" label="#CNN">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="689.23505" y="-1013.55383"></viz:position>
+      </node>
+      <node id="37" label="#CTPrimary">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-776.42413" y="-1025.7454"></viz:position>
+      </node>
+      <node id="38" label="#Caribbean">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="901.83105" y="179.05713"></viz:position>
+      </node>
+      <node id="39" label="#Carrier">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="724.9563" y="-64.408424"></viz:position>
+      </node>
+      <node id="40" label="#CaucusForTrump">
+        <attvalues>
+          <attvalue for="anzahl_global" value="8"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-571.065" y="-341.6581"></viz:position>
+      </node>
+      <node id="41" label="#ChangeAgents">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="650.0363" y="-629.2617"></viz:position>
+      </node>
+      <node id="42" label="#Charleston9">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1095.8969" y="-324.75156"></viz:position>
+      </node>
+      <node id="43" label="#CincoDeMayo">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1344.9673" y="-311.58337"></viz:position>
+      </node>
+      <node id="44" label="#CitizensUnited">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="298.0181" y="903.10974"></viz:position>
+      </node>
+      <node id="45" label="#Clinton">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="848.31866" y="63.170437"></viz:position>
+      </node>
+      <node id="46" label="#ClintonKaine">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="278.9294" y="436.39316"></viz:position>
+      </node>
+      <node id="47" label="#CoastGuardDay">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="315.42914" y="-979.5491"></viz:position>
+      </node>
+      <node id="48" label="#Colbert">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="494.1729" y="-1161.4196"></viz:position>
+      </node>
+      <node id="49" label="#CommanderInChiefForum">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-963.54877" y="-263.25012"></viz:position>
+      </node>
+      <node id="50" label="#CommonCore">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="843.81305" y="-293.8956"></viz:position>
+      </node>
+      <node id="51" label="#CommonLaw">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="557.82886" y="-297.7167"></viz:position>
+      </node>
+      <node id="52" label="#CreatorsAskHRC">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="43.475967" y="908.6313"></viz:position>
+      </node>
+      <node id="53" label="#CripTheVote">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="515.5871" y="201.4405"></viz:position>
+      </node>
+      <node id="54" label="#CrookedHillary">
+        <attvalues>
+          <attvalue for="anzahl_global" value="14"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="133.58655" y="452.5867"></viz:position>
+      </node>
+      <node id="55" label="#Cruz">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-39.03613" y="-623.3332"></viz:position>
+      </node>
+      <node id="56" label="#CruzFraud">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="377.9662" y="-724.8432"></viz:position>
+      </node>
+      <node id="57" label="#DACA">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-135.13007" y="-1008.95386"></viz:position>
+      </node>
+      <node id="58" label="#DDay">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1107.226" y="-410.75525"></viz:position>
+      </node>
+      <node id="59" label="#DEPrimary">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-646.8856" y="-956.46045"></viz:position>
+      </node>
+      <node id="60" label="#DNC">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-862.8811" y="677.5829"></viz:position>
+      </node>
+      <node id="61" label="#DNCinPHL">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-550.08905" y="-1262.3033"></viz:position>
+      </node>
+      <node id="62" label="#DavidCameron">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="368.4593" y="1020.94104"></viz:position>
+      </node>
+      <node id="63" label="#Debate">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="727.29205" y="296.81033"></viz:position>
+      </node>
+      <node id="64" label="#DebateNight">
+        <attvalues>
+          <attvalue for="anzahl_global" value="33"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="331.5376" y="315.30753"></viz:position>
+      </node>
+      <node id="65" label="#Debates2016">
+        <attvalues>
+          <attvalue for="anzahl_global" value="14"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="268.8963" y="102.24548"></viz:position>
+      </node>
+      <node id="66" label="#Decision2016">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-33.008877" y="1030.8776"></viz:position>
+      </node>
+      <node id="67" label="#DeclareYourAmbition">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-533.046" y="873.0767"></viz:position>
+      </node>
+      <node id="68" label="#DefendtheSecond">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-210.47287" y="614.3511"></viz:position>
+      </node>
+      <node id="69" label="#DemConvention">
+        <attvalues>
+          <attvalue for="anzahl_global" value="14"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="434.27405" y="-258.7513"></viz:position>
+      </node>
+      <node id="70" label="#DemPlatform">
+        <attvalues>
+          <attvalue for="anzahl_global" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1366.5563" y="-191.21887"></viz:position>
+      </node>
+      <node id="71" label="#DemocraticSitIn">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1132.5383" y="-548.8351"></viz:position>
+      </node>
+      <node id="72" label="#DemsInPHL">
+        <attvalues>
+          <attvalue for="anzahl_global" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1365.4999" y="186.32881"></viz:position>
+      </node>
+      <node id="73" label="#DemsInPhilly">
+        <attvalues>
+          <attvalue for="anzahl_global" value="51"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="810.9216" y="-968.1801"></viz:position>
+      </node>
+      <node id="74" label="#DemsinPHL">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="568.43616" y="-901.4852"></viz:position>
+      </node>
+      <node id="75" label="#DemsinPhilly">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="403.60077" y="-482.2515"></viz:position>
+      </node>
+      <node id="76" label="#Derp">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="442.35962" y="-936.6401"></viz:position>
+      </node>
+      <node id="77" label="#DisarmHate">
+        <attvalues>
+          <attvalue for="anzahl_global" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="129.94821" y="-788.8194"></viz:position>
+      </node>
+      <node id="78" label="#DivoDeJuarez">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="795.20654" y="-844.3768"></viz:position>
+      </node>
+      <node id="79" label="#Diwali">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="524.57697" y="-682.8902"></viz:position>
+      </node>
+      <node id="80" label="#Donald">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1001.64197" y="-765.0184"></viz:position>
+      </node>
+      <node id="81" label="#DonaldTrump">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="996.0955" y="962.85736"></viz:position>
+      </node>
+      <node id="82" label="#ECONOMY">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-407.68903" y="-1198.9971"></viz:position>
+      </node>
+      <node id="83" label="#EarthDay">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="223.4724" y="-881.9111"></viz:position>
+      </node>
+      <node id="84" label="#EastVillage">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1141.6327" y="762.08636"></viz:position>
+      </node>
+      <node id="85" label="#EauClaire">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-239.01962" y="100.685196"></viz:position>
+      </node>
+      <node id="86" label="#ElectionDay">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-281.3356" y="714.38257"></viz:position>
+      </node>
+      <node id="87" label="#Elkhart">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="184.03781" y="-265.79288"></viz:position>
+      </node>
+      <node id="88" label="#EndCommonCore">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-383.11398" y="128.68097"></viz:position>
+      </node>
+      <node id="89" label="#EndGunViolence">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="30.71685" y="-724.5841"></viz:position>
+      </node>
+      <node id="90" label="#Enjoy">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="355.33502" y="1230.4689"></viz:position>
+      </node>
+      <node id="91" label="#Enough">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-147.36304" y="464.84494"></viz:position>
+      </node>
+      <node id="92" label="#EstoyConElla">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-646.03284" y="946.0648"></viz:position>
+      </node>
+      <node id="93" label="#Excellent">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1128.1284" y="-84.09417"></viz:position>
+      </node>
+      <node id="94" label="#FAIL">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-336.69214" y="395.3063"></viz:position>
+      </node>
+      <node id="95" label="#FITN">
+        <attvalues>
+          <attvalue for="anzahl_global" value="24"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-361.0534" y="-167.36128"></viz:position>
+      </node>
+      <node id="96" label="#FNS">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-760.082" y="-904.5465"></viz:position>
+      </node>
+      <node id="97" label="#FallonTonight">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-653.0017" y="-1079.0697"></viz:position>
+      </node>
+      <node id="98" label="#FeelTheBern">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="38.709442" y="1378.6652"></viz:position>
+      </node>
+      <node id="99" label="#FightForFamilies">
+        <attvalues>
+          <attvalue for="anzahl_global" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="492.6781" y="1014.36505"></viz:position>
+      </node>
+      <node id="100" label="#Filibuster">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1366.4144" y="180.027"></viz:position>
+      </node>
+      <node id="101" label="#FirstInPOTUS">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-205.42764" y="924.6133"></viz:position>
+      </node>
+      <node id="102" label="#FlashbackFriday">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="166.7453" y="1134.2661"></viz:position>
+      </node>
+      <node id="103" label="#Ford">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="728.8161" y="55.946022"></viz:position>
+      </node>
+      <node id="104" label="#Fox">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-172.9969" y="1043.6152"></viz:position>
+      </node>
+      <node id="105" label="#FoxNews">
+        <attvalues>
+          <attvalue for="anzahl_global" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="371.25757" y="-139.73337"></viz:position>
+      </node>
+      <node id="106" label="#Frozen">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="39.295628" y="1143.7985"></viz:position>
+      </node>
+      <node id="107" label="#GIBill">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-429.093" y="-533.66534"></viz:position>
+      </node>
+      <node id="108" label="#GO">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-295.0157" y="-876.43024"></viz:position>
+      </node>
+      <node id="109" label="#GOP">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-141.67593" y="-112.11417"></viz:position>
+      </node>
+      <node id="110" label="#GOPConvention">
+        <attvalues>
+          <attvalue for="anzahl_global" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="601.63324" y="300.92508"></viz:position>
+      </node>
+      <node id="111" label="#GOPDebate">
+        <attvalues>
+          <attvalue for="anzahl_global" value="20"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="988.8787" y="-59.27622"></viz:position>
+      </node>
+      <node id="112" label="#GOPdebate">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="222.98434" y="-139.69164"></viz:position>
+      </node>
+      <node id="113" label="#GOPinCLE">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1229.5382" y="-306.9973"></viz:position>
+      </node>
+      <node id="114" label="#GPLFers">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-958.42346" y="-822.17554"></viz:position>
+      </node>
+      <node id="115" label="#GoldenGlobe">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-26.738842" y="-968.8383"></viz:position>
+      </node>
+      <node id="116" label="#GoodTrouble">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="548.2785" y="417.69348"></viz:position>
+      </node>
+      <node id="117" label="#Greta">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="677.2604" y="1087.9644"></viz:position>
+      </node>
+      <node id="118" label="#GunViolence">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-115.77237" y="-530.7637"></viz:position>
+      </node>
+      <node id="119" label="#HRC4PA">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-158.24579" y="1284.8451"></viz:position>
+      </node>
+      <node id="120" label="#HaileyPuckett">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1065.4575" y="-875.0181"></viz:position>
+      </node>
+      <node id="121" label="#Hannity">
+        <attvalues>
+          <attvalue for="anzahl_global" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-69.39765" y="-1380.3861"></viz:position>
+      </node>
+      <node id="122" label="#HarveyPitt">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="203.41823" y="-1368.3301"></viz:position>
+      </node>
+      <node id="123" label="#Hillary2016">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1262.3777" y="94.923485"></viz:position>
+      </node>
+      <node id="124" label="#HillaryClinton">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="441.0656" y="1310.9182"></viz:position>
+      </node>
+      <node id="125" label="#HillaryKaine2016">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-904.2007" y="-488.15973"></viz:position>
+      </node>
+      <node id="126" label="#HillaryOnCNN">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1206.8446" y="-664.98114"></viz:position>
+      </node>
+      <node id="127" label="#HillaryOnGMA">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-83.91735" y="918.84576"></viz:position>
+      </node>
+      <node id="128" label="#HispanicHeritageMonth">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-417.77542" y="798.1651"></viz:position>
+      </node>
+      <node id="129" label="#HistoryMade">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-367.26624" y="-774.1359"></viz:position>
+      </node>
+      <node id="130" label="#HoustonFlood">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="423.91968" y="899.2428"></viz:position>
+      </node>
+      <node id="131" label="#IACaucus">
+        <attvalues>
+          <attvalue for="anzahl_global" value="15"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-245.26178" y="-212.02815"></viz:position>
+      </node>
+      <node id="132" label="#IAPolitics">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-372.54578" y="-291.02737"></viz:position>
+      </node>
+      <node id="133" label="#ICYMI">
+        <attvalues>
+          <attvalue for="anzahl_global" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="152.95712" y="119.57392"></viz:position>
+      </node>
+      <node id="134" label="#INDPrimary">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-838.561" y="-230.19647"></viz:position>
+      </node>
+      <node id="135" label="#INPrimary">
+        <attvalues>
+          <attvalue for="anzahl_global" value="10"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-30.616428" y="-299.17053"></viz:position>
+      </node>
+      <node id="136" label="#ISIS">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-961.23865" y="-607.2803"></viz:position>
+      </node>
+      <node id="137" label="#ImWithHer">
+        <attvalues>
+          <attvalue for="anzahl_global" value="18"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="685.04486" y="-888.2356"></viz:position>
+      </node>
+      <node id="138" label="#ImWithHernandez">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1141.0978" y="-772.8493"></viz:position>
+      </node>
+      <node id="139" label="#ImWithYou">
+        <attvalues>
+          <attvalue for="anzahl_global" value="48"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-856.9337" y="-358.6211"></viz:position>
+      </node>
+      <node id="140" label="#Imwithyou">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="616.4722" y="984.2422"></viz:position>
+      </node>
+      <node id="141" label="#Indiana">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="617.15186" y="-1114.5615"></viz:position>
+      </node>
+      <node id="142" label="#InternationalNursesDay">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1241.9097" y="-23.689945"></viz:position>
+      </node>
+      <node id="143" label="#Iowa">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-192.04028" y="-1359.7057"></viz:position>
+      </node>
+      <node id="144" label="#IowaCaucus">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-465.5498" y="-396.75824"></viz:position>
+      </node>
+      <node id="145" label="#IranDeal">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="192.96088" y="1.5389533"></viz:position>
+      </node>
+      <node id="146" label="#JimmyFallon">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="594.8749" y="539.9555"></viz:position>
+      </node>
+      <node id="147" label="#Jobs">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="781.1377" y="-171.76714"></viz:position>
+      </node>
+      <node id="148" label="#JohnRyder">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-824.50757" y="372.04456"></viz:position>
+      </node>
+      <node id="149" label="#Jonas">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-726.5473" y="-173.75226"></viz:position>
+      </node>
+      <node id="150" label="#JuanGabriel">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="867.3142" y="-745.54315"></viz:position>
+      </node>
+      <node id="151" label="#JuntosSePuede">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-776.23193" y="-463.71628"></viz:position>
+      </node>
+      <node id="152" label="#KansasCaucus">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-267.4963" y="-84.42656"></viz:position>
+      </node>
+      <node id="153" label="#KenLangone">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-303.93848" y="1106.2523"></viz:position>
+      </node>
+      <node id="154" label="#KentuckyDerby">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-380.7289" y="-974.50433"></viz:position>
+      </node>
+      <node id="155" label="#KhizrKhan">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="468.646" y="531.88806"></viz:position>
+      </node>
+      <node id="156" label="#LAflood">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="490.07016" y="88.65572"></viz:position>
+      </node>
+      <node id="157" label="#LESM">
+        <attvalues>
+          <attvalue for="anzahl_global" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="111.992004" y="239.81175"></viz:position>
+      </node>
+      <node id="158" label="#LGBT">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="289.92358" y="-490.28516"></viz:position>
+      </node>
+      <node id="159" label="#LSSC">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="375.72635" y="-1205.3623"></viz:position>
+      </node>
+      <node id="160" label="#LaborDay">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-632.85486" y="664.3217"></viz:position>
+      </node>
+      <node id="161" label="#LaudatoSi">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-857.2594" y="797.5091"></viz:position>
+      </node>
+      <node id="162" label="#Laurence">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-942.76904" y="-137.66054"></viz:position>
+      </node>
+      <node id="163" label="#LaurenceTribe">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-873.52747" y="1071.8367"></viz:position>
+      </node>
+      <node id="164" label="#LawandOrder">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="702.21405" y="-1195.4901"></viz:position>
+      </node>
+      <node id="165" label="#LeadRight2016">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-750.1248" y="-681.3541"></viz:position>
+      </node>
+      <node id="166" label="#LibrarianOfCongress">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-426.58197" y="1065.7502"></viz:position>
+      </node>
+      <node id="167" label="#LightweightSenatorMarcoRubio">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="45.462166" y="-1167.9656"></viz:position>
+      </node>
+      <node id="168" label="#LittleMarco">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-546.61743" y="-1139.9088"></viz:position>
+      </node>
+      <node id="169" label="#LoneStarState">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1147.1499" y="32.475"></viz:position>
+      </node>
+      <node id="170" label="#LoveTrumpsHate">
+        <attvalues>
+          <attvalue for="anzahl_global" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-538.28546" y="1009.745"></viz:position>
+      </node>
+      <node id="171" label="#LyingTed">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="737.71857" y="529.49365"></viz:position>
+      </node>
+      <node id="172" label="#MAGA">
+        <attvalues>
+          <attvalue for="anzahl_global" value="58"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="57.80552" y="376.057"></viz:position>
+      </node>
+      <node id="173" label="#MAKEAMERICAGREATAGAIN">
+        <attvalues>
+          <attvalue for="anzahl_global" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="80.73019" y="-176.39491"></viz:position>
+      </node>
+      <node id="174" label="#MDPrimary">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="256.68945" y="-747.8565"></viz:position>
+      </node>
+      <node id="175" label="#MDW">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="891.8265" y="-1056.813"></viz:position>
+      </node>
+      <node id="176" label="#MSM">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1383.6498" y="-77.30229"></viz:position>
+      </node>
+      <node id="177" label="#MSNBCTownhall">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-858.5259" y="940.2694"></viz:position>
+      </node>
+      <node id="178" label="#MSPrimary">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1162.6411" y="-99.59608"></viz:position>
+      </node>
+      <node id="179" label="#MadeForHistory">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1022.33356" y="81.51334"></viz:position>
+      </node>
+      <node id="180" label="#MadeInAmerica">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1243.7349" y="236.09595"></viz:position>
+      </node>
+      <node id="181" label="#Mahalo">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="557.62634" y="1127.3595"></viz:position>
+      </node>
+      <node id="182" label="#MaitnerStrong">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-308.5041" y="843.99316"></viz:position>
+      </node>
+      <node id="183" label="#MakeAmericaGreatAgain">
+        <attvalues>
+          <attvalue for="anzahl_global" value="216"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="796.35175" y="-631.6924"></viz:position>
+      </node>
+      <node id="184" label="#MakeAmericaSafeAgain">
+        <attvalues>
+          <attvalue for="anzahl_global" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="439.52884" y="1143.8223"></viz:position>
+      </node>
+      <node id="185" label="#MakeYoutubeGreatAgain">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1096.5458" y="633.3257"></viz:position>
+      </node>
+      <node id="186" label="#MaryBrigidMcManamon">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-315.96912" y="-1102.7156"></viz:position>
+      </node>
+      <node id="187" label="#MattSchlapp">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="956.22485" y="622.7968"></viz:position>
+      </node>
+      <node id="188" label="#MayDay">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="122.82411" y="-1269.8116"></viz:position>
+      </node>
+      <node id="189" label="#Mediafraud">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-419.3237" y="1193.9269"></viz:position>
+      </node>
+      <node id="190" label="#MeetTheTrumps">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-574.7906" y="-141.37129"></viz:position>
+      </node>
+      <node id="191" label="#MegynKellyPresents">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="64.29983" y="-1380.274"></viz:position>
+      </node>
+      <node id="192" label="#MemorialDay">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="975.9069" y="58.00283"></viz:position>
+      </node>
+      <node id="193" label="#Mexico">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="853.725" y="-57.037388"></viz:position>
+      </node>
+      <node id="194" label="#MichaelBrown">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="733.0064" y="-524.2698"></viz:position>
+      </node>
+      <node id="195" label="#MichaelMoore">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="646.1491" y="-190.59557"></viz:position>
+      </node>
+      <node id="196" label="#MikePence">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-401.63947" y="1326.5131"></viz:position>
+      </node>
+      <node id="197" label="#MoreInCommon">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1203.9292" y="369.21826"></viz:position>
+      </node>
+      <node id="198" label="#Mormon">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-669.85126" y="-565.72644"></viz:position>
+      </node>
+      <node id="199" label="#MorningJoe">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="352.10944" y="780.7757"></viz:position>
+      </node>
+      <node id="200" label="#MothersDay">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1103.8557" y="281.07742"></viz:position>
+      </node>
+      <node id="201" label="#MothersoftheMovement">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="609.63934" y="-497.2934"></viz:position>
+      </node>
+      <node id="202" label="#MyTeacherIsWeird">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-535.57623" y="458.42038"></viz:position>
+      </node>
+      <node id="203" label="#NAACP107">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1153.7238" y="494.8946"></viz:position>
+      </node>
+      <node id="204" label="#NABJNAHJ16">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-918.6562" y="0.7935795"></viz:position>
+      </node>
+      <node id="205" label="#NASCAR">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-37.64558" y="-33.314346"></viz:position>
+      </node>
+      <node id="206" label="#NATO">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="502.793" y="-401.79248"></viz:position>
+      </node>
+      <node id="207" label="#NBCNewsForum">
+        <attvalues>
+          <attvalue for="anzahl_global" value="12"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="954.7543" y="834.4738"></viz:position>
+      </node>
+      <node id="208" label="#NHPolitics">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-504.27893" y="-750.2974"></viz:position>
+      </node>
+      <node id="209" label="#NHPrimary">
+        <attvalues>
+          <attvalue for="anzahl_global" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1267.4348" y="543.8021"></viz:position>
+      </node>
+      <node id="210" label="#NPS100">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-965.55383" y="620.6864"></viz:position>
+      </node>
+      <node id="211" label="#NVcaucus">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-885.45276" y="-927.4468"></viz:position>
+      </node>
+      <node id="212" label="#NYCPride">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="580.0962" y="-1252.5696"></viz:position>
+      </node>
+      <node id="213" label="#NYPrimary">
+        <attvalues>
+          <attvalue for="anzahl_global" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-751.2892" y="601.6727"></viz:position>
+      </node>
+      <node id="214" label="#NationalVoterRegistrationDay">
+        <attvalues>
+          <attvalue for="anzahl_global" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-312.2646" y="984.4383"></viz:position>
+      </node>
+      <node id="215" label="#NaturalBorn">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="611.4793" y="-772.7803"></viz:position>
+      </node>
+      <node id="216" label="#NebraskaPrimary">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-655.76886" y="77.14469"></viz:position>
+      </node>
+      <node id="217" label="#NeilCavuto">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-89.23036" y="1146.345"></viz:position>
+      </node>
+      <node id="218" label="#NetNeutrality">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-181.67232" y="801.0528"></viz:position>
+      </node>
+      <node id="219" label="#NevadaCaucus">
+        <attvalues>
+          <attvalue for="anzahl_global" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-760.3431" y="169.67235"></viz:position>
+      </node>
+      <node id="220" label="#NeverCruz">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="812.3628" y="629.20105"></viz:position>
+      </node>
+      <node id="221" label="#NeverDems">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="224.42906" y="786.17883"></viz:position>
+      </node>
+      <node id="222" label="#NeverForget">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1072.2898" y="393.8061"></viz:position>
+      </node>
+      <node id="223" label="#NeverHillary">
+        <attvalues>
+          <attvalue for="anzahl_global" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-77.97927" y="576.27045"></viz:position>
+      </node>
+      <node id="224" label="#NeverTrump">
+        <attvalues>
+          <attvalue for="anzahl_global" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="479.15982" y="775.26624"></viz:position>
+      </node>
+      <node id="225" label="#NewDay">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="53.657455" y="-556.5235"></viz:position>
+      </node>
+      <node id="226" label="#NewHampshire">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-633.74414" y="-247.27986"></viz:position>
+      </node>
+      <node id="227" label="#NewYork">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-700.29" y="-54.483032"></viz:position>
+      </node>
+      <node id="228" label="#NewYorkValues">
+        <attvalues>
+          <attvalue for="anzahl_global" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-452.68692" y="-100.306206"></viz:position>
+      </node>
+      <node id="229" label="#NoBillNoBreak">
+        <attvalues>
+          <attvalue for="anzahl_global" value="8"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-287.33127" y="-659.93176"></viz:position>
+      </node>
+      <node id="230" label="#NoLoyalty">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="98.55615" y="1259.7424"></viz:position>
+      </node>
+      <node id="231" label="#NoMoreSilence">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-176.00394" y="-638.4873"></viz:position>
+      </node>
+      <node id="232" label="#NotOneMore">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-329.10165" y="7.8215938"></viz:position>
+      </node>
+      <node id="233" label="#OHHillYes">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-890.35394" y="127.26503"></viz:position>
+      </node>
+      <node id="234" label="#ORPrimary">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1070.3868" y="-176.22473"></viz:position>
+      </node>
+      <node id="235" label="#ObamaCare">
+        <attvalues>
+          <attvalue for="anzahl_global" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1216.6505" y="-244.69661"></viz:position>
+      </node>
+      <node id="236" label="#Obamacare">
+        <attvalues>
+          <attvalue for="anzahl_global" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="122.82125" y="-429.0109"></viz:position>
+      </node>
+      <node id="237" label="#Olmstead">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="545.46124" y="1255.241"></viz:position>
+      </node>
+      <node id="238" label="#OnTheRecord">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1153.143" y="141.91042"></viz:position>
+      </node>
+      <node id="239" label="#OpeningCeremony">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-422.69443" y="501.60022"></viz:position>
+      </node>
+      <node id="240" label="#OpioidAwarenessWeek">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="550.526" y="881.05164"></viz:position>
+      </node>
+      <node id="241" label="#Orlando">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-828.07416" y="-88.83944"></viz:position>
+      </node>
+      <node id="242" label="#OrlandoUnited">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-352.0766" y="254.32248"></viz:position>
+      </node>
+      <node id="243" label="#PAPrimary">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="269.3104" y="-619.07465"></viz:position>
+      </node>
+      <node id="244" label="#POTUS">
+        <attvalues>
+          <attvalue for="anzahl_global" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1299.4392" y="-481.59964"></viz:position>
+      </node>
+      <node id="245" label="#PhilandoCastile">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="979.90594" y="-970.0356"></viz:position>
+      </node>
+      <node id="246" label="#Politician">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-642.97253" y="397.09912"></viz:position>
+      </node>
+      <node id="247" label="#Polls">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-24.760672" y="-159.29507"></viz:position>
+      </node>
+      <node id="248" label="#PrimaryDay">
+        <attvalues>
+          <attvalue for="anzahl_global" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="51.624428" y="47.79126"></viz:position>
+      </node>
+      <node id="249" label="#Prince">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-102.88802" y="-748.92255"></viz:position>
+      </node>
+      <node id="250" label="#Pulse">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="404.33124" y="-612.5544"></viz:position>
+      </node>
+      <node id="251" label="#PurpleHeartDay">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-232.81569" y="335.09998"></viz:position>
+      </node>
+      <node id="252" label="#RIP">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="918.7822" y="-869.1221"></viz:position>
+      </node>
+      <node id="253" label="#RIPrimary">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="145.75345" y="-656.32166"></viz:position>
+      </node>
+      <node id="254" label="#RNC">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-450.9361" y="355.9161"></viz:position>
+      </node>
+      <node id="255" label="#RNCINCLE">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-965.50574" y="322.56757"></viz:position>
+      </node>
+      <node id="256" label="#RNCInCLE">
+        <attvalues>
+          <attvalue for="anzahl_global" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="65.46194" y="-1046.4142"></viz:position>
+      </node>
+      <node id="257" label="#RNCinCLE">
+        <attvalues>
+          <attvalue for="anzahl_global" value="56"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="380.55817" y="189.72139"></viz:position>
+      </node>
+      <node id="258" label="#RNCwithBernie">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-434.69208" y="-1311.4857"></viz:position>
+      </node>
+      <node id="259" label="#ROGERAILES">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-449.69427" y="-875.0499"></viz:position>
+      </node>
+      <node id="260" label="#RTM2016">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="480.00916" y="-805.64526"></viz:position>
+      </node>
+      <node id="261" label="#Racine">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="251.64943" y="-1242.0388"></viz:position>
+      </node>
+      <node id="262" label="#RepMikeKelly">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-313.50592" y="-1342.7826"></viz:position>
+      </node>
+      <node id="263" label="#RestoreTheVRA">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1098.5697" y="-289.80438"></viz:position>
+      </node>
+      <node id="264" label="#RiggedSystem">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1030.8973" y="-723.34216"></viz:position>
+      </node>
+      <node id="265" label="#Rio2016">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="666.17596" y="1214.6139"></viz:position>
+      </node>
+      <node id="266" label="#RobotRubio">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="709.8076" y="-287.9653"></viz:position>
+      </node>
+      <node id="267" label="#RogerStone">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1028.5944" y="518.1511"></viz:position>
+      </node>
+      <node id="268" label="#RollCallVote">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-538.27405" y="1146.0942"></viz:position>
+      </node>
+      <node id="269" label="#RosanellEaton">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-454.83664" y="19.824978"></viz:position>
+      </node>
+      <node id="270" label="#Rubio">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="868.2592" y="-522.6226"></viz:position>
+      </node>
+      <node id="271" label="#SB50">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="602.69507" y="42.49457"></viz:position>
+      </node>
+      <node id="272" label="#SCOTUS">
+        <attvalues>
+          <attvalue for="anzahl_global" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-423.44806" y="931.33997"></viz:position>
+      </node>
+      <node id="273" label="#SCPrimary">
+        <attvalues>
+          <attvalue for="anzahl_global" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1032.0138" y="-178.56465"></viz:position>
+      </node>
+      <node id="274" label="#SOTU">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="292.6606" y="-1107.867"></viz:position>
+      </node>
+      <node id="275" label="#SallyRideDay">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="885.77966" y="730.5704"></viz:position>
+      </node>
+      <node id="276" label="#SaveElephants">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-982.4051" y="-385.38342"></viz:position>
+      </node>
+      <node id="277" label="#SayHerName">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-22.540575" y="284.42868"></viz:position>
+      </node>
+      <node id="278" label="#SecondAmendment">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-411.62537" y="673.5025"></viz:position>
+      </node>
+      <node id="279" label="#SheWon">
+        <attvalues>
+          <attvalue for="anzahl_global" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1007.9365" y="738.2654"></viz:position>
+      </node>
+      <node id="280" label="#ShesWithUs">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-7.781713" y="-448.04727"></viz:position>
+      </node>
+      <node id="281" label="#SmallBizWeek">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1233.0718" y="250.48666"></viz:position>
+      </node>
+      <node id="282" label="#SouthCarolina">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="725.3529" y="-734.889"></viz:position>
+      </node>
+      <node id="283" label="#SouthCarolinaPrimary">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1080.4578" y="858.0965"></viz:position>
+      </node>
+      <node id="284" label="#Srebrenica">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="940.1279" y="406.4347"></viz:position>
+      </node>
+      <node id="285" label="#StandTogether">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="657.4699" y="-393.29965"></viz:position>
+      </node>
+      <node id="286" label="#StandWithLouisiana">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="296.7269" y="1122.0891"></viz:position>
+      </node>
+      <node id="287" label="#StanleyCup">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="170.93788" y="-1139.6058"></viz:position>
+      </node>
+      <node id="288" label="#Statehood">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-305.27118" y="1249.7339"></viz:position>
+      </node>
+      <node id="289" label="#StopCommonCore">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="176.23042" y="-533.2124"></viz:position>
+      </node>
+      <node id="290" label="#StopGunViolence">
+        <attvalues>
+          <attvalue for="anzahl_global" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1239.4745" y="-621.3943"></viz:position>
+      </node>
+      <node id="291" label="#StoptheHate">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-790.3781" y="41.753925"></viz:position>
+      </node>
+      <node id="292" label="#StrongerTogether">
+        <attvalues>
+          <attvalue for="anzahl_global" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="518.0301" y="-559.58545"></viz:position>
+      </node>
+      <node id="293" label="#SuperBowlSunday">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="472.51462" y="-47.87449"></viz:position>
+      </node>
+      <node id="294" label="#SuperSaturday">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-531.93384" y="114.08046"></viz:position>
+      </node>
+      <node id="295" label="#SuperTuesday">
+        <attvalues>
+          <attvalue for="anzahl_global" value="19"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="76.31658" y="-320.43335"></viz:position>
+      </node>
+      <node id="296" label="#TBT">
+        <attvalues>
+          <attvalue for="anzahl_global" value="11"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="89.79777" y="779.99896"></viz:position>
+      </node>
+      <node id="297" label="#TPP">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-960.8714" y="852.62604"></viz:position>
+      </node>
+      <node id="298" label="#TRUMP">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-517.09436" y="597.0877"></viz:position>
+      </node>
+      <node id="299" label="#TRUMP2016">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1362.9235" y="-222.29715"></viz:position>
+      </node>
+      <node id="300" label="#TRUMPDOG">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="170.38737" y="1370.3013"></viz:position>
+      </node>
+      <node id="301" label="#TeacherAppreciationDay">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="757.88354" y="988.26044"></viz:position>
+      </node>
+      <node id="302" label="#Teachers4Trump">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="190.30798" y="-1010.44446"></viz:position>
+      </node>
+      <node id="303" label="#TeamTrump">
+        <attvalues>
+          <attvalue for="anzahl_global" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="281.25848" y="662.5175"></viz:position>
+      </node>
+      <node id="304" label="#TeamUSA">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-337.52524" y="583.2324"></viz:position>
+      </node>
+      <node id="305" label="#Ted">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-254.1301" y="1364.7324"></viz:position>
+      </node>
+      <node id="306" label="#TedCruz">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="509.9491" y="-171.94418"></viz:position>
+      </node>
+      <node id="307" label="#TerenceCrutcher">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="95.63318" y="-914.3698"></viz:position>
+      </node>
+      <node id="308" label="#ThankAVet">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-742.50824" y="734.1003"></viz:position>
+      </node>
+      <node id="309" label="#ThanksObama">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-782.7761" y="-1142.9425"></viz:position>
+      </node>
+      <node id="310" label="#TheDonald">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="536.0228" y="655.26514"></viz:position>
+      </node>
+      <node id="311" label="#TheTonightShow">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="412.6038" y="658.47504"></viz:position>
+      </node>
+      <node id="312" label="#TitleIX">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="466.97617" y="308.70044"></viz:position>
+      </node>
+      <node id="313" label="#Trump">
+        <attvalues>
+          <attvalue for="anzahl_global" value="8"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="592.945" y="-75.00374"></viz:position>
+      </node>
+      <node id="314" label="#Trump2016">
+        <attvalues>
+          <attvalue for="anzahl_global" value="309"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-167.3612" y="11.681463"></viz:position>
+      </node>
+      <node id="315" label="#Trump360">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="225.30609" y="1247.2343"></viz:position>
+      </node>
+      <node id="316" label="#Trump4President">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-750.4545" y="873.6311"></viz:position>
+      </node>
+      <node id="317" label="#Trump4Vets">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-889.4138" y="-698.3981"></viz:position>
+      </node>
+      <node id="318" label="#TrumpCountry">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-554.46674" y="-492.75354"></viz:position>
+      </node>
+      <node id="319" label="#TrumpDallas">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-996.07" y="203.61166"></viz:position>
+      </node>
+      <node id="320" label="#TrumpForPresident">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-564.94165" y="299.29953"></viz:position>
+      </node>
+      <node id="321" label="#TrumpIsWithYou">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="383.9174" y="45.503895"></viz:position>
+      </node>
+      <node id="322" label="#TrumpLV">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1337.7208" y="-344.2141"></viz:position>
+      </node>
+      <node id="323" label="#TrumpMovement">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-116.76863" y="694.8685"></viz:position>
+      </node>
+      <node id="324" label="#TrumpNV">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-472.8341" y="221.54106"></viz:position>
+      </node>
+      <node id="325" label="#TrumpPence16">
+        <attvalues>
+          <attvalue for="anzahl_global" value="23"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="343.37048" y="540.6408"></viz:position>
+      </node>
+      <node id="326" label="#TrumpPence2016">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="210.86095" y="551.54047"></viz:position>
+      </node>
+      <node id="327" label="#TrumpSupporters">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-688.7905" y="-803.17816"></viz:position>
+      </node>
+      <node id="328" label="#TrumpTrain">
+        <attvalues>
+          <attvalue for="anzahl_global" value="32"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="12.199992" y="163.698"></viz:position>
+      </node>
+      <node id="329" label="#TrumpWaikiki">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="153.12486" y="669.40936"></viz:position>
+      </node>
+      <node id="330" label="#TrumpWon">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="11.958269" y="679.5312"></viz:position>
+      </node>
+      <node id="331" label="#TrumpYourself">
+        <attvalues>
+          <attvalue for="anzahl_global" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1268.4872" y="-6.0975227"></viz:position>
+      </node>
+      <node id="332" label="#TrumpinEverett">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-755.5186" y="1016.7773"></viz:position>
+      </node>
+      <node id="333" label="#Turkey">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-140.55804" y="-1243.4525"></viz:position>
+      </node>
+      <node id="334" label="#TurnUpToVote">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-20.348417" y="-1269.2706"></viz:position>
+      </node>
+      <node id="335" label="#UAW">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1153.0238" y="753.53546"></viz:position>
+      </node>
+      <node id="336" label="#UNGA">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1032.0497" y="167.8133"></viz:position>
+      </node>
+      <node id="337" label="#UPUPUP">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-192.03539" y="-1127.6371"></viz:position>
+      </node>
+      <node id="338" label="#USA">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="306.9225" y="-251.06021"></viz:position>
+      </node>
+      <node id="339" label="#USMC2016">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-274.56573" y="-1229.7222"></viz:position>
+      </node>
+      <node id="340" label="#UT">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-413.49268" y="-655.39825"></viz:position>
+      </node>
+      <node id="341" label="#UTCaucus">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1180.737" y="-513.57446"></viz:position>
+      </node>
+      <node id="342" label="#UnderstandSlavery">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="543.745" y="-1021.48773"></viz:position>
+      </node>
+      <node id="343" label="#Utah">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-658.23083" y="-434.43494"></viz:position>
+      </node>
+      <node id="344" label="#Utah4Trump">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-540.9749" y="-612.36774"></viz:position>
+      </node>
+      <node id="345" label="#UtahCaucus">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-121.06906" y="-382.5371"></viz:position>
+      </node>
+      <node id="346" label="#UtahPrimary">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-347.28854" y="-415.38892"></viz:position>
+      </node>
+      <node id="347" label="#VirWINia">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="371.476" y="-363.9407"></viz:position>
+      </node>
+      <node id="348" label="#VoteTrump">
+        <attvalues>
+          <attvalue for="anzahl_global" value="62"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-136.7343" y="-244.43304"></viz:position>
+      </node>
+      <node id="349" label="#VoteTrump2016">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="193.37393" y="342.664"></viz:position>
+      </node>
+      <node id="350" label="#VoteTrumpIL">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1369.1948" y="-67.42599"></viz:position>
+      </node>
+      <node id="351" label="#VoteTrumpMA">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="416.1563" y="-1065.6682"></viz:position>
+      </node>
+      <node id="352" label="#VoteTrumpMI">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1156.0449" y="506.3895"></viz:position>
+      </node>
+      <node id="353" label="#VoteTrumpNC">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1182.6517" y="-431.73468"></viz:position>
+      </node>
+      <node id="354" label="#VoteTrumpNH">
+        <attvalues>
+          <attvalue for="anzahl_global" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-479.45493" y="-239.514"></viz:position>
+      </node>
+      <node id="355" label="#VoteTrumpNV">
+        <attvalues>
+          <attvalue for="anzahl_global" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-629.7198" y="199.51025"></viz:position>
+      </node>
+      <node id="356" label="#VoteTrumpNY">
+        <attvalues>
+          <attvalue for="anzahl_global" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="98.63126" y="-67.75734"></viz:position>
+      </node>
+      <node id="357" label="#VoteTrumpSC">
+        <attvalues>
+          <attvalue for="anzahl_global" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-125.405396" y="209.38004"></viz:position>
+      </node>
+      <node id="358" label="#VoteTrumpVT">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1308.09" y="-434.1393"></viz:position>
+      </node>
+      <node id="359" label="#VoteTrumpWI">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-19.052263" y="469.25156"></viz:position>
+      </node>
+      <node id="360" label="#VoterFraud">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="303.9263" y="1350.6418"></viz:position>
+      </node>
+      <node id="361" label="#VoterRegistrationDay">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-763.9067" y="1150.86"></viz:position>
+      </node>
+      <node id="362" label="#VotersSpeak">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-206.71739" y="1173.0986"></viz:position>
+      </node>
+      <node id="363" label="#WATCH">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-243.48518" y="212.96161"></viz:position>
+      </node>
+      <node id="364" label="#WCS16">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="300.54642" y="-43.096676"></viz:position>
+      </node>
+      <node id="365" label="#WH">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-249.99023" y="-990.84326"></viz:position>
+      </node>
+      <node id="366" label="#WHCD">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="99.26966" y="1022.71234"></viz:position>
+      </node>
+      <node id="367" label="#WHD">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-29.342636" y="1263.8123"></viz:position>
+      </node>
+      <node id="368" label="#WIBackHer">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1028.9064" y="727.33057"></viz:position>
+      </node>
+      <node id="369" label="#WIPrimary">
+        <attvalues>
+          <attvalue for="anzahl_global" value="13"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="879.1208" y="519.7019"></viz:position>
+      </node>
+      <node id="370" label="#WISCONSIN">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-860.74335" y="538.0296"></viz:position>
+      </node>
+      <node id="371" label="#WOMEN4TRUMP">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1166.7375" y="-738.846"></viz:position>
+      </node>
+      <node id="372" label="#WORK">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1039.6759" y="-47.31239"></viz:position>
+      </node>
+      <node id="373" label="#WakeUpAmerica">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1254.6892" y="-152.90588"></viz:position>
+      </node>
+      <node id="374" label="#WashingtonDC">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-814.9055" y="-582.00525"></viz:position>
+      </node>
+      <node id="375" label="#WattersWorld">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-858.2513" y="251.24007"></viz:position>
+      </node>
+      <node id="376" label="#Wausau">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="974.5636" y="-295.5062"></viz:position>
+      </node>
+      <node id="377" label="#WeAreBernie">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1095.979" y="615.13434"></viz:position>
+      </node>
+      <node id="378" label="#WeMadeHistory">
+        <attvalues>
+          <attvalue for="anzahl_global" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-65.147835" y="-1120.0659"></viz:position>
+      </node>
+      <node id="379" label="#WeTrumpHate">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="459.4677" y="-1301.1847"></viz:position>
+      </node>
+      <node id="380" label="#WeWantTrump">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="334.527" y="-1339.283"></viz:position>
+      </node>
+      <node id="381" label="#WestVirginia">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="810.11365" y="840.6396"></viz:position>
+      </node>
+      <node id="382" label="#WesternTuesday">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-528.5978" y="-989.0907"></viz:position>
+      </node>
+      <node id="383" label="#WheresHillary">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-638.4528" y="535.52545"></viz:position>
+      </node>
+      <node id="384" label="#Wimbledon">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1078.2428" y="869.4732"></viz:position>
+      </node>
+      <node id="385" label="#Wisconsin">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1118.9601" y="272.3436"></viz:position>
+      </node>
+      <node id="386" label="#With_Cruz_you_lose">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-625.10876" y="-700.00793"></viz:position>
+      </node>
+      <node id="387" label="#WomanCard">
+        <attvalues>
+          <attvalue for="anzahl_global" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="677.08044" y="420.99738"></viz:position>
+      </node>
+      <node id="388" label="#Women4Ttump">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="790.3377" y="-409.26636"></viz:position>
+      </node>
+      <node id="389" label="#WomensEqualityDay">
+        <attvalues>
+          <attvalue for="anzahl_global" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-929.70374" y="440.68954"></viz:position>
+      </node>
+      <node id="390" label="#WorldRefugeeDay">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1214.2856" y="657.0938"></viz:position>
+      </node>
+      <node id="391" label="#YUGE">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1275.6185" y="-138.94545"></viz:position>
+      </node>
+      <node id="392" label="#YouthDay">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="987.1356" y="288.3045"></viz:position>
+      </node>
+      <node id="393" label="#brexit">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1255.2516" y="122.58054"></viz:position>
+      </node>
+      <node id="394" label="#campaignfinance">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1130.3093" y="159.40344"></viz:position>
+      </node>
+      <node id="395" label="#debate">
+        <attvalues>
+          <attvalue for="anzahl_global" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1007.827" y="-949.3484"></viz:position>
+      </node>
+      <node id="396" label="#debatenight">
+        <attvalues>
+          <attvalue for="anzahl_global" value="19"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="687.92285" y="874.75397"></viz:position>
+      </node>
+      <node id="397" label="#dtmag">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-638.947" y="806.4626"></viz:position>
+      </node>
+      <node id="398" label="#election2016">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1379.2734" y="51.75811"></viz:position>
+      </node>
+      <node id="399" label="#enough">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1199.7607" y="377.67694"></viz:position>
+      </node>
+      <node id="400" label="#extremevetting">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-825.66797" y="-797.674"></viz:position>
+      </node>
+      <node id="401" label="#fairandbalancedmyass">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-444.25342" y="-1079.3682"></viz:position>
+      </node>
+      <node id="402" label="#fixdemocracyfirst">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1262.7192" y="-551.7184"></viz:position>
+      </node>
+      <node id="403" label="#goodtrouble">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-574.24164" y="-853.92804"></viz:position>
+      </node>
+      <node id="404" label="#gunviolence">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1224.1008" y="-371.68704"></viz:position>
+      </node>
+      <node id="405" label="#holdthefloor">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1106.4375" y="-624.13104"></viz:position>
+      </node>
+      <node id="406" label="#iRegistered">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="786.78503" y="1135.5613"></viz:position>
+      </node>
+      <node id="407" label="#iVoted">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="886.7017" y="1059.7498"></viz:position>
+      </node>
+      <node id="408" label="#imwithher">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1019.40314" y="511.89792"></viz:position>
+      </node>
+      <node id="409" label="#imwithyou">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-529.22375" y="734.6569"></viz:position>
+      </node>
+      <node id="410" label="#jenniferrubin">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="908.40125" y="-175.97855"></viz:position>
+      </node>
+      <node id="411" label="#laurencetribe">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1310.2129" y="425.49286"></viz:position>
+      </node>
+      <node id="412" label="#makeamericagreatagain">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="855.74585" y="296.00412"></viz:position>
+      </node>
+      <node id="413" label="#makersandtakers">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="805.7964" y="412.93994"></viz:position>
+      </node>
+      <node id="414" label="#media">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-649.0289" y="1219.5259"></viz:position>
+      </node>
+      <node id="415" label="#polls">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1090.2351" y="-844.7412"></viz:position>
+      </node>
+      <node id="416" label="#presidenttrump">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="922.5469" y="-409.2584"></viz:position>
+      </node>
+      <node id="417" label="#primary">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1071.1301" y="400.67227"></viz:position>
+      </node>
+      <node id="418" label="#sendDonaldtospace">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-95.24371" y="1384.261"></viz:position>
+      </node>
+      <node id="419" label="#sitin">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-750.6542" y="465.84653"></viz:position>
+      </node>
+      <node id="420" label="#slipping">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-979.69574" y="980.3598"></viz:position>
+      </node>
+      <node id="421" label="#smallbiz">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1215.0668" y="646.97955"></viz:position>
+      </node>
+      <node id="422" label="#taxplan">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="768.8593" y="180.92831"></viz:position>
+      </node>
+      <node id="423" label="#trump">
+        <attvalues>
+          <attvalue for="anzahl_global" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1071.5338" y="-659.3087"></viz:position>
+      </node>
+      <node id="424" label="#trump2016">
+        <attvalues>
+          <attvalue for="anzahl_global" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1342.1924" y="309.3942"></viz:position>
+      </node>
+      <node id="425" label="#ugpride2016">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1344.2316" y="306.64893"></viz:position>
+      </node>
+      <node id="426" label="#vaticanwalls">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="784.731" y="-1110.5015"></viz:position>
+      </node>
+      <node id="427" label="#veterans">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="229.62505" y="1012.7201"></viz:position>
+      </node>
+      <node id="428" label="#voteTrump">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-84.033424" y="95.38331"></viz:position>
+      </node>
+      <node id="429" label="#womancard">
+        <attvalues>
+          <attvalue for="anzahl_global" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-576.04266" y="-20.980677"></viz:position>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="173" target="347"></edge>
+      <edge id="1" source="65" target="205"></edge>
+      <edge id="2" source="15" target="172"></edge>
+      <edge id="3" source="15" target="133"></edge>
+      <edge id="4" source="133" target="172"></edge>
+      <edge id="5" source="172" target="330"></edge>
+      <edge id="6" source="1" target="330"></edge>
+      <edge id="7" source="15" target="64"></edge>
+      <edge id="8" source="64" target="133"></edge>
+      <edge id="9" source="64" target="172"></edge>
+      <edge id="10" source="15" target="65"></edge>
+      <edge id="11" source="65" target="172"></edge>
+      <edge id="12" source="23" target="65"></edge>
+      <edge id="13" source="23" target="64"></edge>
+      <edge id="14" source="64" target="65"></edge>
+      <edge id="15" source="64" target="145"></edge>
+      <edge id="16" source="65" target="312"></edge>
+      <edge id="17" source="64" target="325"></edge>
+      <edge id="18" source="247" target="280"></edge>
+      <edge id="19" source="65" target="247"></edge>
+      <edge id="20" source="65" target="280"></edge>
+      <edge id="21" source="172" target="328"></edge>
+      <edge id="22" source="5" target="133"></edge>
+      <edge id="23" source="5" target="53"></edge>
+      <edge id="24" source="53" target="133"></edge>
+      <edge id="25" source="15" target="173"></edge>
+      <edge id="26" source="146" target="310"></edge>
+      <edge id="27" source="310" target="311"></edge>
+      <edge id="28" source="310" target="325"></edge>
+      <edge id="29" source="146" target="311"></edge>
+      <edge id="30" source="146" target="325"></edge>
+      <edge id="31" source="311" target="325"></edge>
+      <edge id="32" source="94" target="202"></edge>
+      <edge id="33" source="157" target="172"></edge>
+      <edge id="34" source="15" target="328"></edge>
+      <edge id="35" source="173" target="348"></edge>
+      <edge id="36" source="133" target="348"></edge>
+      <edge id="37" source="15" target="155"></edge>
+      <edge id="38" source="133" target="173"></edge>
+      <edge id="39" source="150" target="252"></edge>
+      <edge id="40" source="78" target="252"></edge>
+      <edge id="41" source="78" target="150"></edge>
+      <edge id="42" source="223" target="326"></edge>
+      <edge id="43" source="25" target="118"></edge>
+      <edge id="44" source="25" target="27"></edge>
+      <edge id="45" source="27" target="118"></edge>
+      <edge id="46" source="15" target="325"></edge>
+      <edge id="47" source="28" target="172"></edge>
+      <edge id="48" source="31" target="118"></edge>
+      <edge id="49" source="172" target="325"></edge>
+      <edge id="50" source="8" target="172"></edge>
+      <edge id="51" source="133" target="328"></edge>
+      <edge id="52" source="133" target="156"></edge>
+      <edge id="53" source="173" target="338"></edge>
+      <edge id="54" source="3" target="86"></edge>
+      <edge id="55" source="68" target="86"></edge>
+      <edge id="56" source="86" target="223"></edge>
+      <edge id="57" source="3" target="68"></edge>
+      <edge id="58" source="3" target="223"></edge>
+      <edge id="59" source="68" target="223"></edge>
+      <edge id="60" source="3" target="277"></edge>
+      <edge id="61" source="223" target="277"></edge>
+      <edge id="62" source="172" target="223"></edge>
+      <edge id="63" source="280" target="295"></edge>
+      <edge id="64" source="54" target="325"></edge>
+      <edge id="65" source="239" target="304"></edge>
+      <edge id="66" source="251" target="304"></edge>
+      <edge id="67" source="239" target="251"></edge>
+      <edge id="68" source="69" target="133"></edge>
+      <edge id="69" source="172" target="323"></edge>
+      <edge id="70" source="201" target="347"></edge>
+      <edge id="71" source="157" target="173"></edge>
+      <edge id="72" source="69" target="75"></edge>
+      <edge id="73" source="172" target="296"></edge>
+      <edge id="74" source="75" target="206"></edge>
+      <edge id="75" source="91" target="133"></edge>
+      <edge id="76" source="158" target="250"></edge>
+      <edge id="77" source="75" target="79"></edge>
+      <edge id="78" source="75" target="292"></edge>
+      <edge id="79" source="75" target="133"></edge>
+      <edge id="80" source="75" target="158"></edge>
+      <edge id="81" source="46" target="133"></edge>
+      <edge id="82" source="257" target="321"></edge>
+      <edge id="83" source="173" target="257"></edge>
+      <edge id="84" source="173" target="321"></edge>
+      <edge id="85" source="206" target="285"></edge>
+      <edge id="86" source="257" target="326"></edge>
+      <edge id="87" source="15" target="257"></edge>
+      <edge id="88" source="110" target="116"></edge>
+      <edge id="89" source="15" target="116"></edge>
+      <edge id="90" source="15" target="110"></edge>
+      <edge id="91" source="110" target="257"></edge>
+      <edge id="92" source="33" target="44"></edge>
+      <edge id="93" source="133" target="314"></edge>
+      <edge id="94" source="94" target="133"></edge>
+      <edge id="95" source="54" target="133"></edge>
+      <edge id="96" source="241" target="291"></edge>
+      <edge id="97" source="222" target="284"></edge>
+      <edge id="98" source="15" target="314"></edge>
+      <edge id="99" source="15" target="156"></edge>
+      <edge id="100" source="133" target="364"></edge>
+      <edge id="101" source="54" target="314"></edge>
+      <edge id="102" source="172" target="314"></edge>
+      <edge id="103" source="45" target="313"></edge>
+      <edge id="104" source="118" target="280"></edge>
+      <edge id="105" source="22" target="118"></edge>
+      <edge id="106" source="118" target="229"></edge>
+      <edge id="107" source="118" target="231"></edge>
+      <edge id="108" source="22" target="280"></edge>
+      <edge id="109" source="229" target="280"></edge>
+      <edge id="110" source="231" target="280"></edge>
+      <edge id="111" source="22" target="229"></edge>
+      <edge id="112" source="22" target="231"></edge>
+      <edge id="113" source="229" target="231"></edge>
+      <edge id="114" source="77" target="280"></edge>
+      <edge id="115" source="77" target="89"></edge>
+      <edge id="116" source="89" target="280"></edge>
+      <edge id="117" source="129" target="229"></edge>
+      <edge id="118" source="129" target="231"></edge>
+      <edge id="119" source="108" target="229"></edge>
+      <edge id="120" source="107" target="346"></edge>
+      <edge id="121" source="91" target="242"></edge>
+      <edge id="122" source="94" target="242"></edge>
+      <edge id="123" source="91" target="94"></edge>
+      <edge id="124" source="269" target="314"></edge>
+      <edge id="125" source="87" target="247"></edge>
+      <edge id="126" source="173" target="247"></edge>
+      <edge id="127" source="87" target="173"></edge>
+      <edge id="128" source="328" target="349"></edge>
+      <edge id="129" source="34" target="173"></edge>
+      <edge id="130" source="314" target="429"></edge>
+      <edge id="131" source="172" target="314"></edge>
+      <edge id="132" source="173" target="314"></edge>
+      <edge id="133" source="33" target="296"></edge>
+      <edge id="134" source="221" target="296"></edge>
+      <edge id="135" source="33" target="221"></edge>
+      <edge id="136" source="190" target="314"></edge>
+      <edge id="137" source="173" target="328"></edge>
+      <edge id="138" source="3" target="314"></edge>
+      <edge id="139" source="194" target="201"></edge>
+      <edge id="140" source="41" target="194"></edge>
+      <edge id="141" source="41" target="201"></edge>
+      <edge id="142" source="3" target="278"></edge>
+      <edge id="143" source="242" target="348"></edge>
+      <edge id="144" source="288" target="362"></edge>
+      <edge id="145" source="314" target="348"></edge>
+      <edge id="146" source="216" target="314"></edge>
+      <edge id="147" source="216" target="320"></edge>
+      <edge id="148" source="314" target="320"></edge>
+      <edge id="149" source="145" target="173"></edge>
+      <edge id="150" source="109" target="173"></edge>
+      <edge id="151" source="109" target="145"></edge>
+      <edge id="152" source="135" target="348"></edge>
+      <edge id="153" source="135" target="314"></edge>
+      <edge id="154" source="135" target="173"></edge>
+      <edge id="155" source="56" target="75"></edge>
+      <edge id="156" source="56" target="174"></edge>
+      <edge id="157" source="56" target="243"></edge>
+      <edge id="158" source="56" target="253"></edge>
+      <edge id="159" source="75" target="174"></edge>
+      <edge id="160" source="75" target="243"></edge>
+      <edge id="161" source="75" target="253"></edge>
+      <edge id="162" source="174" target="243"></edge>
+      <edge id="163" source="174" target="253"></edge>
+      <edge id="164" source="243" target="253"></edge>
+      <edge id="165" source="243" target="348"></edge>
+      <edge id="166" source="253" target="348"></edge>
+      <edge id="167" source="109" target="232"></edge>
+      <edge id="168" source="314" target="328"></edge>
+      <edge id="169" source="118" target="249"></edge>
+      <edge id="170" source="127" target="296"></edge>
+      <edge id="171" source="228" target="232"></edge>
+      <edge id="172" source="228" target="348"></edge>
+      <edge id="173" source="232" target="348"></edge>
+      <edge id="174" source="247" target="314"></edge>
+      <edge id="175" source="247" target="356"></edge>
+      <edge id="176" source="247" target="248"></edge>
+      <edge id="177" source="314" target="356"></edge>
+      <edge id="178" source="248" target="314"></edge>
+      <edge id="179" source="248" target="356"></edge>
+      <edge id="180" source="133" target="314"></edge>
+      <edge id="181" source="133" target="356"></edge>
+      <edge id="182" source="145" target="248"></edge>
+      <edge id="183" source="232" target="328"></edge>
+      <edge id="184" source="173" target="356"></edge>
+      <edge id="185" source="247" target="314"></edge>
+      <edge id="186" source="247" target="314"></edge>
+      <edge id="187" source="247" target="247"></edge>
+      <edge id="188" source="232" target="314"></edge>
+      <edge id="189" source="228" target="314"></edge>
+      <edge id="190" source="173" target="314"></edge>
+      <edge id="191" source="173" target="225"></edge>
+      <edge id="192" source="314" target="428"></edge>
+      <edge id="193" source="172" target="428"></edge>
+      <edge id="194" source="173" target="428"></edge>
+      <edge id="195" source="328" target="428"></edge>
+      <edge id="196" source="359" target="428"></edge>
+      <edge id="197" source="251" target="363"></edge>
+      <edge id="198" source="85" target="251"></edge>
+      <edge id="199" source="251" target="314"></edge>
+      <edge id="200" source="251" target="428"></edge>
+      <edge id="201" source="251" target="328"></edge>
+      <edge id="202" source="85" target="363"></edge>
+      <edge id="203" source="314" target="363"></edge>
+      <edge id="204" source="363" target="428"></edge>
+      <edge id="205" source="328" target="363"></edge>
+      <edge id="206" source="85" target="314"></edge>
+      <edge id="207" source="85" target="428"></edge>
+      <edge id="208" source="85" target="328"></edge>
+      <edge id="209" source="328" target="428"></edge>
+      <edge id="210" source="348" target="428"></edge>
+      <edge id="211" source="173" target="428"></edge>
+      <edge id="212" source="171" target="220"></edge>
+      <edge id="213" source="314" target="364"></edge>
+      <edge id="214" source="328" target="364"></edge>
+      <edge id="215" source="345" target="346"></edge>
+      <edge id="216" source="173" target="345"></edge>
+      <edge id="217" source="314" target="345"></edge>
+      <edge id="218" source="173" target="346"></edge>
+      <edge id="219" source="314" target="346"></edge>
+      <edge id="220" source="19" target="22"></edge>
+      <edge id="221" source="19" target="173"></edge>
+      <edge id="222" source="19" target="314"></edge>
+      <edge id="223" source="22" target="173"></edge>
+      <edge id="224" source="22" target="314"></edge>
+      <edge id="225" source="22" target="348"></edge>
+      <edge id="226" source="19" target="348"></edge>
+      <edge id="227" source="345" target="348"></edge>
+      <edge id="228" source="346" target="348"></edge>
+      <edge id="229" source="17" target="348"></edge>
+      <edge id="230" source="22" target="345"></edge>
+      <edge id="231" source="22" target="346"></edge>
+      <edge id="232" source="17" target="22"></edge>
+      <edge id="233" source="19" target="345"></edge>
+      <edge id="234" source="19" target="346"></edge>
+      <edge id="235" source="17" target="19"></edge>
+      <edge id="236" source="17" target="345"></edge>
+      <edge id="237" source="17" target="346"></edge>
+      <edge id="238" source="314" target="363"></edge>
+      <edge id="239" source="318" target="343"></edge>
+      <edge id="240" source="198" target="318"></edge>
+      <edge id="241" source="318" target="346"></edge>
+      <edge id="242" source="318" target="344"></edge>
+      <edge id="243" source="198" target="343"></edge>
+      <edge id="244" source="343" target="346"></edge>
+      <edge id="245" source="343" target="344"></edge>
+      <edge id="246" source="198" target="346"></edge>
+      <edge id="247" source="198" target="344"></edge>
+      <edge id="248" source="344" target="346"></edge>
+      <edge id="249" source="22" target="340"></edge>
+      <edge id="250" source="173" target="295"></edge>
+      <edge id="251" source="295" target="314"></edge>
+      <edge id="252" source="295" target="348"></edge>
+      <edge id="253" source="88" target="314"></edge>
+      <edge id="254" source="172" target="329"></edge>
+      <edge id="255" source="294" target="314"></edge>
+      <edge id="256" source="152" target="173"></edge>
+      <edge id="257" source="152" target="314"></edge>
+      <edge id="258" source="112" target="328"></edge>
+      <edge id="259" source="153" target="217"></edge>
+      <edge id="260" source="104" target="153"></edge>
+      <edge id="261" source="104" target="217"></edge>
+      <edge id="262" source="94" target="246"></edge>
+      <edge id="263" source="205" target="314"></edge>
+      <edge id="264" source="205" target="348"></edge>
+      <edge id="265" source="8" target="314"></edge>
+      <edge id="266" source="8" target="328"></edge>
+      <edge id="267" source="173" target="289"></edge>
+      <edge id="268" source="158" target="295"></edge>
+      <edge id="269" source="158" target="173"></edge>
+      <edge id="270" source="112" target="173"></edge>
+      <edge id="271" source="173" target="314"></edge>
+      <edge id="272" source="219" target="355"></edge>
+      <edge id="273" source="314" target="324"></edge>
+      <edge id="274" source="133" target="314"></edge>
+      <edge id="275" source="118" target="314"></edge>
+      <edge id="276" source="24" target="355"></edge>
+      <edge id="277" source="314" target="355"></edge>
+      <edge id="278" source="173" target="277"></edge>
+      <edge id="279" source="173" target="236"></edge>
+      <edge id="280" source="277" target="357"></edge>
+      <edge id="281" source="173" target="357"></edge>
+      <edge id="282" source="314" target="357"></edge>
+      <edge id="283" source="277" target="314"></edge>
+      <edge id="284" source="48" target="159"></edge>
+      <edge id="285" source="172" target="303"></edge>
+      <edge id="286" source="103" target="313"></edge>
+      <edge id="287" source="39" target="313"></edge>
+      <edge id="288" source="147" target="313"></edge>
+      <edge id="289" source="193" target="313"></edge>
+      <edge id="290" source="39" target="103"></edge>
+      <edge id="291" source="103" target="147"></edge>
+      <edge id="292" source="103" target="193"></edge>
+      <edge id="293" source="39" target="147"></edge>
+      <edge id="294" source="39" target="193"></edge>
+      <edge id="295" source="147" target="193"></edge>
+      <edge id="296" source="95" target="228"></edge>
+      <edge id="297" source="95" target="354"></edge>
+      <edge id="298" source="228" target="354"></edge>
+      <edge id="299" source="173" target="354"></edge>
+      <edge id="300" source="95" target="173"></edge>
+      <edge id="301" source="112" target="293"></edge>
+      <edge id="302" source="112" target="271"></edge>
+      <edge id="303" source="271" target="293"></edge>
+      <edge id="304" source="118" target="173"></edge>
+      <edge id="305" source="95" target="226"></edge>
+      <edge id="306" source="226" target="354"></edge>
+      <edge id="307" source="95" target="228"></edge>
+      <edge id="308" source="95" target="314"></edge>
+      <edge id="309" source="228" target="314"></edge>
+      <edge id="310" source="173" target="347"></edge>
+      <edge id="311" source="40" target="131"></edge>
+      <edge id="312" source="131" target="173"></edge>
+      <edge id="313" source="131" target="314"></edge>
+      <edge id="314" source="112" target="131"></edge>
+      <edge id="315" source="105" target="195"></edge>
+      <edge id="316" source="195" target="266"></edge>
+      <edge id="317" source="105" target="266"></edge>
+      <edge id="318" source="131" target="348"></edge>
+      <edge id="319" source="95" target="348"></edge>
+      <edge id="320" source="95" target="131"></edge>
+      <edge id="321" source="149" target="227"></edge>
+      <edge id="322" source="227" target="228"></edge>
+      <edge id="323" source="149" target="228"></edge>
+      <edge id="324" source="364" target="364"></edge>
+      <edge id="325" source="173" target="364"></edge>
+      <edge id="326" source="313" target="364"></edge>
+      <edge id="327" source="173" target="364"></edge>
+      <edge id="328" source="313" target="364"></edge>
+      <edge id="329" source="173" target="313"></edge>
+      <edge id="330" source="173" target="428"></edge>
+      <edge id="331" source="314" target="428"></edge>
+      <edge id="332" source="254" target="314"></edge>
+      <edge id="333" source="51" target="173"></edge>
+      <edge id="334" source="173" target="206"></edge>
+      <edge id="335" source="173" target="306"></edge>
+      <edge id="336" source="51" target="206"></edge>
+      <edge id="337" source="51" target="306"></edge>
+      <edge id="338" source="206" target="306"></edge>
+      <edge id="339" source="55" target="173"></edge>
+      <edge id="340" source="156" target="306"></edge>
+      <edge id="341" source="85" target="314"></edge>
+      <edge id="342" source="85" target="173"></edge>
+      <edge id="343" source="2" target="40"></edge>
+      <edge id="344" source="105" target="314"></edge>
+      <edge id="345" source="144" target="348"></edge>
+      <edge id="346" source="132" target="348"></edge>
+      <edge id="347" source="132" target="314"></edge>
+      <edge id="348" source="131" target="132"></edge>
+      <edge id="349" source="95" target="132"></edge>
+      <edge id="350" source="157" target="314"></edge>
+      <edge id="351" source="105" target="173"></edge>
+      <edge id="352" source="32" target="270"></edge>
+      <edge id="353" source="57" target="365"></edge>
+    </edges>
+  </graph>
+</gexf>
