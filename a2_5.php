@@ -50,7 +50,9 @@ foreach ( $period as $date ) {
     $arr[0]['sum'] = 0;
     }
 
-  print(", " . $arr[0]['sum'] . "], ");
+  if ($date == $enddate) {
+    print(", " . $arr[0]['sum'] . "]"); }
+  else { print(", " . $arr[0]['sum'] . "], "); }
   
   } // Ende Javascript-Format
 
