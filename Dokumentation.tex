@@ -246,17 +246,18 @@ def aehnlichtkeit(htA, htB):
             aehnlichkeit += 1000/min(distance)
     return aehnlichkeit
 \end{python}
+Quelldatei: \url{https://github.com/felixbinder/FU_DBS_Projekt/blob/master/metrik_zeit.py}
 
 \subsection{K-Means}
 Jeder Hashtags hat nach der Berechnung der Ähnlichkeitsmetrik einen Ähnlichkeitswert zu allen anderen l Hashtags. Jeder Hashtag hat somit einen l-dimensionalen Vektor. Auf Basis dieses Vektors (die zusammen einen Vektorraum aufspannen), der die Ähnlichkeit zu allen anderen Hashtags beschreibt, führen wir k-means aus.\\
-Die Ergebnisse von K-Means werden bei Aufgabe 2.3 visualisiert. Dafür fügt das Skript zur Berechnung von K-Means für jeden Hashtag in die Datenbank zwei Werte ein: erstens den zugehörigen Cluster und zweitens markieren wir die k Hashtags, die für ihren Cluster am repräsentativsten sind. Die berechnen wir, in dem wir für jeden Centroid den Hashtag berechnen, dessen Position im oben beschriebenen Vektorraum am nächsten (euklidische Distanz) zu dem Centroid ist. Dieser repräsentiert dann den Cluster als dessen typischster Vertreter.
+Die Ergebnisse von K-Means werden bei Aufgabe 2.3 visualisiert. Dafür fügt das Skript zur Berechnung von K-Means für jeden Hashtag in die Datenbank zwei Werte ein: erstens den zugehörigen Cluster und zweitens markieren wir die k Hashtags, die für ihren Cluster am repräsentativsten sind. Die berechnen wir, in dem wir für jeden Centroid den Hashtag berechnen, dessen Position im oben beschriebenen Vektorraum am nächsten (euklidische Distanz) zu dem Centroid ist. Dieser repräsentiert dann den Cluster als dessen typischster Vertreter. Der Code findet sich hier: \url{https://github.com/felixbinder/FU_DBS_Projekt/blob/master/Clusterfindung.py}
 
 \subsection{Visualisierung des Hashtagnetzwerks}
 \subsubsection{Aufbereitung des Graphens}
-Nachdem die Daten aus der Datenbank exportiert wurden und manuell in Excel gereinigt wurden, wird mithilfe von Gephi ein Graph erstellt. 
+Nachdem die Daten aus der Datenbank exportiert wurden und manuell in Excel gereinigt wurden, wird mithilfe von Gephi ein Graph erstellt. Die Exceltabelle findet sich hier: \url{https://github.com/felixbinder/FU_DBS_Projekt/blob/master/Graph-Rohdaten.xlsx}, die Graph-Datei hier: \url{https://github.com/felixbinder/FU_DBS_Projekt/blob/master/graph_final.gexf}
 \subsubsection{Visualisierung}
 Die Daten werden mit sigma.js visualisiert. Dabei entspricht die Größe des Knoten der absoluten Zahl des Auftretens des entsprechenden Hashtags. Die Farbe der Hashtags entspricht deren Zugehörigkeit zu einem k-means-Clusters. Der repräsentativste Hashtag eines Cluster wird mit einem Diamanten markiert. Der Graph wird mit dem AtlasForce2 Algorithmus visualisert. Dieser Algorithmus ist ein physik-basierter Layout-Algorithmus. Er verwendet die Knoten zwischen Kanten als Federn, deren Gewicht (hier: Ähnlichkeit) deren Stärke beschreibt. Beim Betrachten der Visualisierung kann beobachtet werden, wie die Knoten sich in dem Graphen sich in den ersten Sekunden verschieben, bis schließlich ein Gleichgewicht eingestellt hat und der Graph so gerückt wurde, dass die Knoten nach ihrer Ähnlichkeit (via Kantengewicht) geordnet wurden (wobei nicht zwangsläufigerweise eine optimale Lösung erreicht wird). Die Visualisierung liegt in der Datei \texttt{FU\_DBS\_Projekt/sigma.js/graph viz.html}.\\
-\includegraphics[width=0.95\textwidth]{visualized.png}
+\includegraphics[width=1\textwidth]{visualized.png} Da die Datei auf Bibliotheken von sigma.js zugreift, muss die Ordnerstruktur gewahrt bleiben. Hier die entsprechende Orderstruktur als .zip: \url{https://github.com/felixbinder/FU_DBS_Projekt/blob/master/sigmajs.zip} (es ist zu beachten, dass die Graph-Datei im selben Verzeichnis wie der Ordner liegen muss).
 \subsection{Visualisierung aller Hashtags}
 
 Die Häufigkeit des Autretens aller Hashtags insgesamt über die Zeit hinweg haben wir mittels PHP und JavaScript visualisiert. Der Quellcode ist hier zu finden: \url{https://github.com/felixbinder/FU_DBS_Projekt/blob/master/a2_4.php} Die Visualisierung selbst sieht wie folgt aus:
