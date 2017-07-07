@@ -27,6 +27,7 @@
 \usepackage{tikz-er2}
 \usepackage{verbatim}
 \usepackage{ulem}
+\usepackage{pythonhighlight}
 
 
 % Einstellungen für Listings
@@ -215,14 +216,53 @@ Der Code dafür war:
 \subsection{Webserver}
 Wir haben einen Apache2-Server unter Ubuntu aufgesetzt. Dazu nutzten wir \begin{sffamily}sudo apt-get install apache2\end{sffamily}. Der Server wird mit \begin{sffamily}sudo service apache2 start\end{sffamily} gestartet. Die Konfiguration haben wir unseren Bedürfnissen angepasst.
 
+\subsection{Metrik für Ähnlichkeit von Hashtags}
+Wir wählen eine Metrik für die Ähnlichkeit, die auf zeitlicher Ähnlichkeit im Auftreten der Tweets beruht. Gedanke dahinter ist, dass zeitlich aufeinanderfolgende Tweets tendentiell thematisch zusammenhängen. Die Metrik sucht für jeden Tweet A den nächsten Tweet B und berechnet den zeitlichen Abstand. Die zeitlichen Abstände werden quadriert, mit 1 geteilt und summiert und der Durchschnitt gebildet. Somit bildet die Metrik die durchschnittliche quadratische zeitliche Distanz zu einem Auftreten des Hashtags. Die Metrik wird in beide Rechnungen berechnet, um eine symmetrische Metrik zu schaffen.
+\begin{python}
+[...]
+    for htA in hashtags:
+        for htB in hashtags:
+            print("Berechne: "+str(htA[0])+" und "+str(htB[0]))
+        #Berechne Abstand htA und htB 
+            final_ae = aehnlichtkeit(htA,htB) + aehnlichtkeit(htA,htB)
+            cursor.execute("INSERT INTO hashtags_aehnlichkeit(name1,name2,aehnlichkeit) VALUES('"+str(htA[0])+"','"+str(htB[0])+"',"+str(final_ae)+");")
+   [...]
+def aehnlichtkeit(htA, htB):
+    aehnlichkeit = 0
+    count = 0
+    cursor.execute("SELECT time FROM tweet, t_enth_h WHERE tweet.ID = t_enth_h.tweet_id AND h_name = '" + str(htA[0]) + "';")
+    atweets = cursor.fetchall() #[alle Tweets, die Hashtag A enthalten]
+    cursor.execute("SELECT time FROM tweet, t_enth_h WHERE tweet.ID = t_enth_h.tweet_id AND h_name = '" + str(htB[0]) + "';")
+    btweets = cursor.fetchall() #[alle Tweets, die Hashtag B enthalten]
+    for at in atweets:
+        k=0
+        distance = []
+        for bt in btweets:
+            distance.append(float(abs((at[0] - bt[0]).total_seconds())))
+        md = min(distance)
+        if md == 0:
+            aehnlichkeit+100 #Wert waehlen!
+        else: 
+            aehnlichkeit += 1000/min(distance)
+    return aehnlichkeit
+\end{python}
 
-\subsection{Aufgabe 2-4}
+\subsection{K-Means}
+Jeder Hashtags hat nach der Berechnung der Ähnlichkeitsmetrik einen Ähnlichkeitswert zu allen anderen l Hashtags. Jeder Hashtag hat somit einen l-dimensionalen Vektor. Auf Basis dieses Vektors (die zusammen einen Vektorraum aufspannen), der die Ähnlichkeit zu allen anderen Hashtags beschreibt, führen wir k-means aus.\\
+Die Ergebnisse von K-Means werden bei Aufgabe 2.3 visualisiert. Dafür fügt das Skript zur Berechnung von K-Means für jeden Hashtag in die Datenbank zwei Werte ein: erstens den zugehörigen Cluster und zweitens markieren wir die k Hashtags, die für ihren Cluster am repräsentativsten sind. Die berechnen wir, in dem wir für jeden Centroid den Hashtag berechnen, dessen Position im oben beschriebenen Vektorraum am nächsten (euklidische Distanz) zu dem Centroid ist. Dieser repräsentiert dann den Cluster als dessen typischster Vertreter.
+
+\subsection{Visualisierung des Hashtagnetzwerks}
+\subsubsection{Aufbereitung des Graphens}
+Nachdem die Daten aus der Datenbank exportiert wurden und manuell in Excel gereinigt wurden, wird mithilfe von Gephi ein Graph erstellt. 
+\subsubsection{Visualisierung}
+Die Daten werden mit sigma.js visualisiert. Dabei entspricht die Größe des Knoten der absoluten Zahl des Auftretens des entsprechenden Hashtags. Die Farbe der Hashtags entspricht deren Zugehörigkeit zu einem k-means-Clusters. Der repräsentativste Hashtag eines Cluster wird mit einem Diamanten markiert. Der Graph wird mit dem AtlasForce2 Algorithmus visualisert. Dieser Algorithmus ist ein physik-basierter Layout-Algorithmus. Er verwendet die Knoten zwischen Kanten als Federn, deren Gewicht (hier: Ähnlichkeit) deren Stärke beschreibt. Beim Betrachten der Visualisierung kann beobachtet werden, wie die Knoten sich in dem Graphen sich in den ersten Sekunden verschieben, bis schließlich ein Gleichgewicht eingestellt hat und der Graph so gerückt wurde, dass die Knoten nach ihrer Ähnlichkeit (via Kantengewicht) geordnet wurden (wobei nicht zwangsläufigerweise eine optimale Lösung erreicht wird). Die Visualisierung liegt in der Datei \texttt{FU\_DBS\_Projekt/sigma.js/graph viz.html}.
+\subsection{Visualisierung aller Hashtags}
 
 Die Häufigkeit des Autretens aller Hashtags insgesamt über die Zeit hinweg haben wir mittels PHP und JavaScript visualisiert. Der Quellcode ist hier zu finden: \url{https://github.com/felixbinder/FU_DBS_Projekt/blob/master/a2_4.php} Die Visualisierung selbst sieht wie folgt aus:
 
 \includegraphics[width=0.95\textwidth]{a2_4.png}
 
-\subsection{Aufgabe 2-5}
+\subsection{Visualisierung einzelner Hashtags}
 
 Die Häufigkeit des Autretens einzelner Hashtags über die Zeit hinweg haben wir mittels PHP und JavaScript visualisiert. Der Quellcode ist hier zu finden: \url{https://github.com/felixbinder/FU_DBS_Projekt/blob/master/a2_5.php} Die Visualisierung selbst sieht wie folgt aus (zwei zufällig ausgewählte Beispiele):
 
