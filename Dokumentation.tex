@@ -51,8 +51,10 @@
 
 % Kapitelüberschriften
 \renewcommand*{\thesubsection}{\@arabic\c@subsection.}
+\renewcommand*{\thesubsubsection}{\@alph\c@subsubsection)}
 \titleformat{\section}[hang]{\sffamily\bfseries\LARGE\centering}{\thesection}{5pt}{}
 \titleformat{\subsection}[hang]{\sffamily\bfseries\Large}{\thesubsection}{5pt}{}
+%\titleformat{\subsubsection}[hang]{\sffamily\bfseries\Large}{\thesubsubsection}{5pt}{}
 %\renewcommand*{\raggedsection}{\centering}
 
 
@@ -217,7 +219,7 @@ Der Code dafür war:
 Wir haben einen Apache2-Server unter Ubuntu aufgesetzt. Dazu nutzten wir \begin{sffamily}sudo apt-get install apache2\end{sffamily}. Der Server wird mit \begin{sffamily}sudo service apache2 start\end{sffamily} gestartet. Die Konfiguration haben wir unseren Bedürfnissen angepasst.
 
 \subsection{Metrik für Ähnlichkeit von Hashtags}
-Wir wählen eine Metrik für die Ähnlichkeit, die auf zeitlicher Ähnlichkeit im Auftreten der Tweets beruht. Gedanke dahinter ist, dass zeitlich aufeinanderfolgende Tweets tendentiell thematisch zusammenhängen. Die Metrik sucht für jeden Tweet A den nächsten Tweet B und berechnet den zeitlichen Abstand. Die zeitlichen Abstände werden quadriert, mit 1 geteilt und summiert und der Durchschnitt gebildet. Somit bildet die Metrik die durchschnittliche quadratische zeitliche Distanz zu einem Auftreten des Hashtags. Die Metrik wird in beide Rechnungen berechnet, um eine symmetrische Metrik zu schaffen.
+Wir wählen eine Metrik für die Ähnlichkeit, die auf zeitlicher Ähnlichkeit im Auftreten der Tweets beruht. Der Gedanke dahinter ist, dass zeitlich aufeinanderfolgende Tweets tendentiell thematisch zusammenhängen. Die Metrik sucht für jeden Tweet A den nächsten Tweet B und berechnet den zeitlichen Abstand. Die zeitlichen Abstände werden quadriert, mit 1 geteilt und summiert und der Durchschnitt gebildet. Somit bildet die Metrik die durchschnittliche quadratische zeitliche Distanz zu einem Auftreten des Hashtags. Die Metrik wird in beide Rechnungen berechnet, um die Symmetrieeigenschaft der Metrik zu wahren.
 \begin{python}
 [...]
     for htA in hashtags:
@@ -257,7 +259,7 @@ Die Ergebnisse von K-Means werden bei Aufgabe 2.3 visualisiert. Dafür fügt das
 Nachdem die Daten aus der Datenbank exportiert wurden und manuell in Excel gereinigt wurden, wird mithilfe von Gephi ein Graph erstellt. Die Exceltabelle findet sich hier: \url{https://github.com/felixbinder/FU_DBS_Projekt/blob/master/Graph-Rohdaten.xlsx}, die Graph-Datei hier: \url{https://github.com/felixbinder/FU_DBS_Projekt/blob/master/graph_final.gexf}
 \subsubsection{Visualisierung}
 Die Daten werden mit sigma.js visualisiert. Dabei entspricht die Größe des Knoten der absoluten Zahl des Auftretens des entsprechenden Hashtags. Die Farbe der Hashtags entspricht deren Zugehörigkeit zu einem k-means-Clusters. Der repräsentativste Hashtag eines Cluster wird mit einem Diamanten markiert. Der Graph wird mit dem AtlasForce2 Algorithmus visualisert. Dieser Algorithmus ist ein physik-basierter Layout-Algorithmus. Er verwendet die Knoten zwischen Kanten als Federn, deren Gewicht (hier: Ähnlichkeit) deren Stärke beschreibt. Beim Betrachten der Visualisierung kann beobachtet werden, wie die Knoten sich in dem Graphen sich in den ersten Sekunden verschieben, bis schließlich ein Gleichgewicht eingestellt hat und der Graph so gerückt wurde, dass die Knoten nach ihrer Ähnlichkeit (via Kantengewicht) geordnet wurden (wobei nicht zwangsläufigerweise eine optimale Lösung erreicht wird). Die Visualisierung liegt in der Datei \texttt{FU\_DBS\_Projekt/sigma.js/graph viz.html}.\\
-\includegraphics[width=1\textwidth]{visualized.png} Da die Datei auf Bibliotheken von sigma.js zugreift, muss die Ordnerstruktur gewahrt bleiben. Hier die entsprechende Orderstruktur als .zip: \url{https://github.com/felixbinder/FU_DBS_Projekt/blob/master/sigmajs.zip} (es ist zu beachten, dass die Graph-Datei im selben Verzeichnis wie der Ordner liegen muss).
+\includegraphics[width=1\textwidth]{visualized.png} Da die Datei auf Bibliotheken von sigma.js zugreift, muss die Ordnerstruktur gewahrt bleiben. Hier die entsprechende Orderstruktur als .zip: \url{https://github.com/felixbinder/FU_DBS_Projekt/blob/master/sigmajs.zip} (es ist zu beachten, dass die Graph"=Datei im selben Verzeichnis wie der Ordner liegen muss).
 \subsection{Visualisierung aller Hashtags}
 
 Die Häufigkeit des Autretens aller Hashtags insgesamt über die Zeit hinweg haben wir mittels PHP und JavaScript visualisiert. Der Quellcode ist hier zu finden: \url{https://github.com/felixbinder/FU_DBS_Projekt/blob/master/a2_4.php} Die Visualisierung selbst sieht wie folgt aus:
