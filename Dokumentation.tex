@@ -219,7 +219,7 @@ Der Code dafür war:
 Wir haben einen Apache2-Server unter Ubuntu aufgesetzt. Dazu nutzten wir \begin{sffamily}sudo apt-get install apache2\end{sffamily}. Der Server wird mit \begin{sffamily}sudo service apache2 start\end{sffamily} gestartet. Die Konfiguration haben wir unseren Bedürfnissen angepasst.
 
 \subsection{Metrik für Ähnlichkeit von Hashtags}
-Wir wählen eine Metrik für die Ähnlichkeit, die auf zeitlicher Ähnlichkeit im Auftreten der Tweets beruht. Der Gedanke dahinter ist, dass zeitlich aufeinanderfolgende Tweets tendentiell thematisch zusammenhängen. Die Metrik sucht für jeden Tweet A den nächsten Tweet B und berechnet den zeitlichen Abstand. Die zeitlichen Abstände werden quadriert, mit 1 geteilt und summiert und der Durchschnitt gebildet. Somit bildet die Metrik die durchschnittliche quadratische zeitliche Distanz zu einem Auftreten des Hashtags. Die Metrik wird in beide Rechnungen berechnet, um die Symmetrieeigenschaft der Metrik zu wahren.
+Wir wählen eine Metrik für die Ähnlichkeit, die auf zeitlicher Ähnlichkeit im Auftreten der Tweets beruht. Der Gedanke dahinter ist, dass zeitlich aufeinanderfolgende Tweets tendentiell thematisch zusammenhängen. Die Metrik sucht für jeden Tweet A den nächsten Tweet B und berechnet den zeitlichen Abstand. Die zeitlichen Abstände werden quadriert, es wird \(\frac{1000}{\text{Distanz}}\) gerechnet, zum bisherigen Ähnlichkeitswert summiert und dann der Durchschnitt gebildet. Somit bildet die Metrik die durchschnittliche quadratische zeitliche Distanz zu einem Auftreten des Hashtags. Die Metrik wird in beide Richtungen berechnet, um die Symmetrieeigenschaft zu wahren.
 \begin{python}
 [...]
     for htA in hashtags:
@@ -251,7 +251,8 @@ def aehnlichtkeit(htA, htB):
 Quelldatei: \url{https://github.com/felixbinder/FU_DBS_Projekt/blob/master/metrik_zeit.py}
 
 \subsection{K-Means}
-Jeder Hashtags hat nach der Berechnung der Ähnlichkeitsmetrik einen Ähnlichkeitswert zu allen anderen l Hashtags. Jeder Hashtag hat somit einen l-dimensionalen Vektor. Auf Basis dieses Vektors (die zusammen einen Vektorraum aufspannen), der die Ähnlichkeit zu allen anderen Hashtags beschreibt, führen wir k-means aus.\\
+Jeder Hashtags hat nach der Berechnung der Ähnlichkeitsmetrik einen Ähnlichkeitswert zu allen anderen l Hashtags. Jeder Hashtag hat somit einen l-dimensionalen Vektor. Auf Basis dieses Vektors (die zusammen einen Vektorraum aufspannen), der die Ähnlichkeit zu allen anderen Hashtags beschreibt, führen wir k-means aus.
+
 Die Ergebnisse von K-Means werden bei Aufgabe 2.3 visualisiert. Dafür fügt das Skript zur Berechnung von K-Means für jeden Hashtag in die Datenbank zwei Werte ein: erstens den zugehörigen Cluster und zweitens markieren wir die k Hashtags, die für ihren Cluster am repräsentativsten sind. Die berechnen wir, in dem wir für jeden Centroid den Hashtag berechnen, dessen Position im oben beschriebenen Vektorraum am nächsten (euklidische Distanz) zu dem Centroid ist. Dieser repräsentiert dann den Cluster als dessen typischster Vertreter. Der Code findet sich hier: \url{https://github.com/felixbinder/FU_DBS_Projekt/blob/master/Clusterfindung.py}
 
 \subsection{Visualisierung des Hashtagnetzwerks}
@@ -260,9 +261,11 @@ Nachdem die Daten aus der Datenbank exportiert wurden und manuell in Excel gerei
 \subsubsection{Visualisierung}
 Die Daten werden mit sigma.js visualisiert. Dabei entspricht die Größe des Knoten der absoluten Zahl des Auftretens des entsprechenden Hashtags. Die Farbe der Hashtags entspricht deren Zugehörigkeit zu einem k-means-Clusters. Der repräsentativste Hashtag eines Cluster wird mit einem Diamanten markiert. Der Graph wird mit dem AtlasForce2 Algorithmus visualisert. Dieser Algorithmus ist ein physik-basierter Layout-Algorithmus. Er verwendet die Knoten zwischen Kanten als Federn, deren Gewicht (hier: Ähnlichkeit) deren Stärke beschreibt. Beim Betrachten der Visualisierung kann beobachtet werden, wie die Knoten sich in dem Graphen sich in den ersten Sekunden verschieben, bis schließlich ein Gleichgewicht eingestellt hat und der Graph so gerückt wurde, dass die Knoten nach ihrer Ähnlichkeit (via Kantengewicht) geordnet wurden (wobei nicht zwangsläufigerweise eine optimale Lösung erreicht wird). Die Visualisierung liegt in der Datei \texttt{FU\_DBS\_Projekt/sigma.js/graph viz.html}.\\
 \includegraphics[width=1\textwidth]{visualized.png} Da die Datei auf Bibliotheken von sigma.js zugreift, muss die Ordnerstruktur gewahrt bleiben. Hier die entsprechende Orderstruktur als .zip: \url{https://github.com/felixbinder/FU_DBS_Projekt/blob/master/sigmajs.zip} (es ist zu beachten, dass die Graph"=Datei im selben Verzeichnis wie der Ordner liegen muss).
+
+
 \subsection{Visualisierung aller Hashtags}
 
-Die Häufigkeit des Autretens aller Hashtags insgesamt über die Zeit hinweg haben wir mittels PHP und JavaScript visualisiert. Der Quellcode ist hier zu finden: \url{https://github.com/felixbinder/FU_DBS_Projekt/blob/master/a2_4.php} Die Visualisierung selbst sieht wie folgt aus:
+Die Häufigkeit des Autretens aller Hashtags insgesamt über die Zeit hinweg haben wir mittels PHP und JavaScript visualisiert. Der Quellcode ist hier zu finden: \url{https://github.com/felixbinder/FU_DBS_Projekt/blob/master/a2_4.php} Eine Fassung, die alle JavaScript"=Bibliotheken (und auch bereits Aufgabe 2-5) enthält, kann hier heruntergeladen werden: \url{https://github.com/felixbinder/FU_DBS_Projekt/blob/master/Aufgabe_2-4_2-5.tar.gz} Die\linebreak Visualisierung selbst sieht wie folgt aus:
 
 \includegraphics[width=0.95\textwidth]{a2_4.png}
 
