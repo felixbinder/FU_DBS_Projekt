@@ -44,5 +44,5 @@ def aehnlichtkeit(htA, htB):
 		if md == 0:
 			aehnlichkeit+100 #Wert wählen!
 		else: 
-			aehnlichkeit += 1000/min(distance)
+			aehnlichkeit += 1000/md
 	return aehnlichkeit
